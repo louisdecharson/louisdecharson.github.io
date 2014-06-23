@@ -25,14 +25,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 ================================================== */
 body {
 		background: #fff;
-		font: 12px/14px "Menlo", "American Typewriter", serif;
+		font: 12px/14px "American Typewriter", serif;
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
  }
  h1, h2, h3, h4, h5, h6 {
 		color: #181818;
-		font-family: "Menlo", "American Typewriter", serif;
+		font-family: "American Typewriter", serif;
 		font-weight: normal; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 24px; line-height: 5px; margin-bottom: 5px;}
