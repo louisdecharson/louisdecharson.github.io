@@ -6,50 +6,134 @@
 	<meta name="description" content="Page de présentation">
 	<meta name="author" content="Louis de Charsonville">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=Fira+Mono' rel='stylesheet' type='text/css'>
+	
 	<link rel="stylesheet" href="stylesheets/style.css">
-
+	<!-- Skeleton -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
 
 <body>
-<center>
-<h1>Louis de Charsonville</h1>
-<br>
-<p><img src="images/photo_profil.jpg" alt="" width="14%"></p>
-<hr>
-<br>
-<h2>About me : </h2>
-<br>
-<h3>Etudes</h3>
-<li> 2014 - Sciences Po Paris, Prép'ENA</li>
-<li> 2013 - ENSAE Paris Tech, voie Analyse des Marchés et Finance d'Entreprise</li>
-<li> 2013 - Sciences Po Paris, master Affaires Publiques</li>
-<br/>
-<h3>Stages</h3>
-<li> 2014 (6 mois) - Direction Générale du Trésor, Ambassade de France à Washington - Département Macroéconomie</li>
-<li> 2012 (5 mois) - ING Commercial Banking, Paris - Business manager</li>
-<li> 2011 (3 mois) - OCDE, Paris - Direction Statistiques</li>
-<br>
-<h3>Contact</h3>
-<li>LinkedIn: <a href="http://lnkd.in/dXPVM5d">Mon profil</a></li>
-<li>Twitter: <a href="http://twitter.com/louisdecharson">@louisdecharson</a></li>
-<br/>
-<h3>Curriculum Vitae</h3>
-<br>
-<p><a href="files/resume.pdf">resume in english</a></p>
-<br/>
-<hr>
-<br>
-<h2>Projets : </h2>
-<br>
-<h3>Transform audio in visual effects</h3><br/><li>
-	L'objectif est l'analyse sonore en temps réel pour logiciel de mapping.<br/>
-	<a href="https://github.com/louisdecharson/ATS">Github</a> / <a href="files/ATS.pdf">pdf</a>
-	<br/><br/>
-<hr>
-<!--<br>
-<h2>Autres</h2> -->
+<div class="container">
+	<div class="three columns sidebar">
+		<nav>
+			<h3 id="logo"></h3>
+			<ul>
+				<li><a href="#Etudes">Études</a></li>
+				<li><a href="#Stages">Stages</a></li>
+				<li><a href="#projets">Projets</a></li>
+			</ul>
+		</nav>
+		&nbsp;
+		</div>
+	<div class="twelve columns offset-by-one content">
+		<header>
+			<h2> Louis de Charsonville</h2>
+			<p>Diplômé de l'ENSAE ParisTech et de Sciences Po Paris - 23 ans <p>
+			<div class="row clearfix">
+				<div class="five columns alpha">
+					<img src="images/photo_profil.jpg", alt="responsive", width="80%"/>
+					</div>
+			<div class="seven columns omega">
+				<h5>Contact</h5>
+				<br>
+				<ul>
+					<li>LinkedIn: <a href="http://lnkd.in/dXPVM5d">Mon profil</a></li>
+					<li>Twitter: <a href="http://twitter.com/louisdecharson">@louisdecharson</a></li>
+				</ul>
+				</div>
+			</div>
+		</header>
+		<hr class="large" />
+		<div class="doc-section" id="Etudes">
+			<h3>Etudes</h3>
+			<div class="row clearfix">
+				<div class="three columns alpha">
+					<h5>2013 - 2014</h5>
+					</div>
+				<div class="nine columns omega">
+					<h5>Sciences Po, Classe préparatoire aux concours administratifs</h5>
+					<p>Cours suivis : Droit public, Économie, Culture générale, Questions internationales, Questions sociales, Questions européennes, Histoire, Civilisation au Moyen-Orient </p>
+					</div>
+				</div>
+			<div class="row clearfix">
+				<div class="three columns alpha">
+					<h5>2011 - 2013</h5>
+					</div>
+				<div class="nine columns omega">
+					<h5>Sciences Po, Master Affaires Publiques</h5>
+					<p>Cours suivis : Droit public, Droit public européen, Libertés publiques et droits fondamentaux, Économie, Déséquilibres financiers internationaux, Philosophie publique, Culture générale, Finances Publiques, Questions sociales, Gestion financière, Outils de défense, Recherche actions</p>
+					</div>
+				</div>
+			<div class="row clearfix">
+				<div class="three columns alpha">
+					<h5>2010 - 2013</h5>
+					</div>
+				<div class="nine columns omega">
+					<h5>ENSAE ParisTech, Ingénieur Statisticien - voie Analyse des Marchés et Finance d'Entreprise</h5>
+					<p>Cours suivis : Macroéconomie, Commerce international Microéconomie, Histoire des faits économiques, Économétrie, Séries temporelles, Théorie des jeux, Analyse financière, Advanced Corporate Finance, Industrial Organization, Marketing, Instituional and Monetary Policy, Droit économique, Droit des sociétés, Gestion de portefeuille, C++ </p>
+					</div>
+				</div>
+			</div>
 
-<center>
+			<hr/>
+			<div class="doc-section" id="Stages">
+				<h3>Stages</h3>
+				<div class="row clearfix">
+					<div class="three columns alpha">
+						<h5>2014 (6 mois)</h5>
+						</div>
+					<div class="nine columns omega">
+						<h5>Direction Générale du Trésor, Ambassade de France à Washington</h5>
+						<p><strong>Missions : </strong>Le suivi de la situation macro-économique américaine et rédaction de notes qui illustrent les principales évolutions de l’économie américaine. Analyse approfondies sur : le marché de l'emploi américain et l'évolution du taux de participation, le marché hypothécaire américain et la réforme des GSEs, les monnaies virtuelles. Le suivi et la rédaction de compte-rendu de conférences et auditions organisées par différentes institutions présentes à Washington (Think-tanks, Congrès, Organisations professionnelles)</p>
+						</div>
+					</div>
+				<div class="row clearfix">
+					<div class="three columns alpha">
+						<h5>2012 (5 mois)</h5>
+						</div>
+					<div class="nine columns omega">
+						<h5>ING Commercial Banking</h5>
+						<p><strong>Missions : </strong>Étude de l’impact des nouvelles normes réglementaires et prudentielles Bâle III et Solvency II sur le modèle de bancassurance français. Assistance technique au développement de modèles de calcul des besoins en capital.</p>
+						</div>
+					</div>
+				<div class="row clearfix">
+					<div class="three columns alpha">
+						<h5>2011 (3 mois)</h5>
+						</div>
+					<div class="nine columns omega">
+						<h5>OCDE, Direction Statistiques</h5>
+						<p><strong>Missions : </strong>Réalisation d'une étude sur l'estimation à un niveau micro-économique du patrimoine des ménages. Participation à la réalisation d'une version française du rapport How’s Life</p>
+						</div>
+					</div>
+				<div class="row clearfix">
+					<div class="three columns alpha">
+						<h5>2009 (2 mois)</h5>
+						</div>
+					<div class="nine columns omega">
+						<h5>Saatchi Gallery, Gallery Mess</h5>
+						<p>Commis de salle pour le restaurant de la Saatchi Gallery à Londres</p>
+						</div>
+					</div>
+				</div>
+
+			<hr/>
+			
+			<div class="doc-section" id="projets">
+				<h3>Projets</h3>
+				<div class="row clearfix">
+					<div class="three columns alpha">
+						<h5>2013</h5>
+					</div>
+				<div class="nine columns omega">
+					<h5>Transform audio in visual effects</h5>
+					<p>Projet réalisé dans le cadre du cours de C++ dont l'objectif est l'analyse fréquentielle en temps réel d'une source sonore</p>
+					<a href="https://github.com/louisdecharson/ATS" class="button">Github</a>
+					<a href="files/ATS.pdf" class="button">.pdf</a>
+					</div>
+				</div>
+			</div>
+	</div>
 </body>
 </html>
 
