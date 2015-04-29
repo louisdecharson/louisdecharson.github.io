@@ -82,6 +82,16 @@
 	strong { font-weight: bold; color: #333; }
 	small { font-size: 80%; }
 
+
+	.title{
+		width:270px;
+		height:150px;
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin:-75px 0 0 -135px;
+	}
+
 /*	Blockquotes  */
 	blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
 	blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
