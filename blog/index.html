@@ -51,4 +51,20 @@
 		</style>
 	</head>
 <body>
+	<div id="header">
+		<h1><a href="/">Blog</a></h1>
+ <p id="description">
+			{block:HasPages}
+				{block:Pages}<a href="{URL}">{Label}</a> &nbsp;&nbsp;{/block:Pages}
+			{/block:HasPages}
+			
+			{block:AskEnabled}<a href="/ask">ask</a> &nbsp;&nbsp;{/block:AskEnabled}
+            {block:SubmissionsEnabled}<a href="/submit">{SubmitLabel}</a> &nbsp;&nbsp;{/block:SubmissionsEnabled}
+
+<br />
+{block:Description}
+{Description}
+{/block:Description}
+</p>
 </body>
+
