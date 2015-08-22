@@ -25,14 +25,13 @@
 	</script>
 	
 	<!-- JAVASCRIPTS  -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.0.min.js"></script>
 	<script type="text/javascript" src="http://static.tumblr.com/bfhsl6l/OPmmmihm5/plugins.js"></script>
 	<script type="text/javascript">
 		function handleThis(formElm){window.location="/tagged/"+formElm.q.value+"";return false;};
 	</script>
-	<script src="scripts/syndex.js"></script>
-
+	<script src="scripts/menu.js"></script>
 
 </head>
 
@@ -49,9 +48,15 @@
 		</div>
 		<div class="nav_button_spacer">
 		</div>
-		<div id="nav">
+		<div id="open_menu" style="display:none">/Open Menu</div>
+		<div class="nav_button_spacer">
+		</div>
+		<div id="nav" style="display:none">
 			<div id="nav_table">
 				<a class="nav_button" href="/deflation">Déflation</a>
+			</div>
+			<div id="nav_table">
+				<a class="nav_button" href="/blog">Blog</a>
 			</div>
 		</div>
 	</div>
