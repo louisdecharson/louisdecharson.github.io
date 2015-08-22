@@ -34,7 +34,9 @@ $(document).ready(function(){
             $("#nav").attr("style","display:");
             menu_open=true;            
         }
-
-    }); 
+    });
 });
 
+function soon() {
+    document.getElementById("soon").style.display="";
+}

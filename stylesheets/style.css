@@ -1,5 +1,5 @@
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-		margin: 10px;
+		margin: 5px;
 		padding: 0;
 		border: 2px;
 		font-size: 100%;
@@ -49,21 +49,47 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	em { font-style: italic; }
 	strong { font-weight: bold; color: #333; }
 	small { font-size: 80%; }
-a.nav_button{
-	text-decoration: none
+
+/* #Typography
+================================================== */
+.title{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width: 50%;
+	margin:-75px 0 0 -135px;
 }
+
+/* #Links
+================================================== */
+a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+a:hover, a:focus { color: #000; }
+p a, p a:visited { line-height: inherit; }
+a.nav_button{
+	text-decoration: none;
+	display: block;
+	white-space: nowrap; 
+}
+
+/* #Misc
+================================================== */
 #open_menu{
 	font: 11px "American Typewriter", serif;
 	color: #B2B2B2;
 }
 
-/* #Navigation Toggle menu from Syndex
-================================================== */
+#soon{
+	font: 11px "American Typewriter", serif;
+	color: #B2B2B2;
+}
 
-#nav_toggle_wrapper{position: fixed;display: table;bottom: 0;left: 0;margin: 20px;z-index: 30000012}
+/* #Navigation Toggle menu 
+================================================== */
 #nav_toggle {cursor: pointer;}
-#navSwitch{-webkit-transform:rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transition: 0.2s;-moz-transition: 0.2s;-o-transition: 0.2s;-ms-transition: 0.2s}.nav_button, 
-#nav_toggle{display: table-cell;vertical-align: middle;padding: 0 8px;height:22px}
-.next.nav_button{border-top: 1px solid transparent;}
-/*#nav_toggle {-webkit-transform: translate3D(0, 0, 0);}form {display: table-cell;}input {height: 22px;padding-left: 8px;border: none;outline: none;width: 200px;background-color: transparent;text-transform: capitalize; line-height: 0}
-*/.nav_button_spacer,
+#navSwitch{-webkit-transform:rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transition: 0.2s;-moz-transition: 0.2s;-o-transition: 0.2s;-ms-transition: 0.2s}
+#navSwitch{
+	width:1px;
+}
+.nav_button, 
+
+
