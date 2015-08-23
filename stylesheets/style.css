@@ -82,6 +82,9 @@ a.nav_button{
 	font: 11px "American Typewriter", serif;
 	color: #B2B2B2;
 }
+ul#menu li{
+	padding: 0px 20px;
+}
 
 /* #Navigation Toggle menu 
 ================================================== */
