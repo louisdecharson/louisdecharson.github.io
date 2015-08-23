@@ -24,7 +24,9 @@
 		background: #fff;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
-		margin: 0 0 0 100px; 
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
 	}
 /* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 		 TUMBLR CSS 
