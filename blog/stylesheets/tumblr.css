@@ -5,7 +5,6 @@
 /* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 		NOT TUMBLR CSS 
 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-	
 #header h1 a {
 		color: #181818; 
 		font-family: "American Typewriter", Georgia, serif;
@@ -39,11 +38,18 @@
 		line-height: 1.8em;
 		color: #919191;
 		background: #fff;
-		padding: 60px 0px 0px 0px;		
+		padding: 60px 0px 0px 0px;	
 }
 .tumblr_post {
 		margin-bottom: 30px;
 		border-bottom: 1px solid black
+}
+.tumblr_photo_post {
+		margin-bottom: 30px;
+		border-bottom: 1px solid black;
+		max-width: 100%;
+    	height: auto;
+
 }
 .tumblr_title {	
 	color: #000000;
@@ -51,6 +57,7 @@
 	margin: 0 0 1.5em 0;
 }
 .tumblr_body img {	
+	width: auto;
 
 }
 .read_more_container {
