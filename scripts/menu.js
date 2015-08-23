@@ -40,3 +40,6 @@ $(document).ready(function(){
 function soon() {
     document.getElementById("soon").style.display="";
 }
+function byeByeSoon(){
+    document.getElementById("soon").style.display="none";
+}
