@@ -92,7 +92,10 @@ ul#menu li{
 #navSwitch{-webkit-transform:rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);-ms-transform: rotate(45deg);-webkit-transition: 0.2s;-moz-transition: 0.2s;-o-transition: 0.2s;-ms-transition: 0.2s}
 #navSwitch{
 	width:1px;
+	display: inline-block;
 }
 .nav_button, 
-
+#nav_toggle_wrapper{
+	margin: 0px;
+}
 
