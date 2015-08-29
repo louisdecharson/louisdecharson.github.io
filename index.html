@@ -30,19 +30,47 @@
 		function handleThis(formElm){window.location="/tagged/"+formElm.q.value+"";return false;};
 	</script>
 	<script src="scripts/menu.js"></script>
+	
+	<noscript>
+		<div id="noscript-warning">
+			louisdecharson.github.io works best with Javascript
+		</div>
+		<style type="text/css">
+	        .nojavascript{display:;}
+	        .javascript{display:none;}
+	    </style>
+	</noscript>
 
 </head>
 
 <body>	
 	<div class="title"> 
 	<h4>Louis de Charsonville</h4>
-	<div id="nav_toggle_wrapper">
-		<div id="nav_toggle">
-			<span id="navSwitch">✕
-			</span>
-			<span id="open_menu" style="display:none">/Open Menu</span>
+	<div class="javascript">
+		<div id="nav_toggle_wrapper">
+			<div id="nav_toggle">
+				<span id="navSwitch">✕
+				</span>
+				<span id="open_menu" style="display:none">/Open Menu</span>
+			</div>
+			<div id="nav" style="display:none">
+				<div id="nav_table">
+					<ul>
+						<li><a class="nav_button">Sciences Po Courses</a>
+							<ul id="menu">
+								<li>
+									<a class="nav_button" onclick="soon()" onmouseover="soon()" onmouseout="byeByeSoon()">- Quantitative Tools - Winter 15/16<span id="soon" style="display:none">soon</span></a>
+								</li>
+								<li><a class="nav_button" href="/sciences-po/deflation">- Prep'ENA - La déflation (10.06.2015)</a></li>
+							</ul></li>
+						<li><a class="nav_button" href="files/resume.pdf">curriculum vitae</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<div id="nav" style="display:none">
+	</div>
+	<div class="nojavascript">
+		<div id="nav">
 			<div id="nav_table">
 				<ul>
 					<li><a class="nav_button">Sciences Po Courses</a>
@@ -57,6 +85,5 @@
 			</div>
 		</div>
 	</div>
-</div>
 </body>
 </html>

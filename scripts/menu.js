@@ -1,5 +1,6 @@
 $(document).ready(function(){
     var menu_open;
+    $(".nojavascript").attr("style", "display:none");
     menu_open=false
     $("#navSwitch").on("mouseenter",function(){
         if (menu_open==false) {
