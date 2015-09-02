@@ -39,6 +39,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	small { font-size: 80%; }
 	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
 
+ol, ul {
+list-style: none; }
+/*li:before {content: "- ";}*/
+ul li{
+	padding: 0px 0px;
+	margin-left: -2%;
+
+}
 /* #Links
 ================================================== */
 a, a:visited { color: #333; text-decoration: underline; outline: 0; }
@@ -50,3 +58,9 @@ a.nav_button{
 	white-space: nowrap; 
 }
 
+/* #MISC
+================================================== */
+#soon{
+	font: 11px "American Typewriter", serif;
+	color: #B2B2B2;
+}
