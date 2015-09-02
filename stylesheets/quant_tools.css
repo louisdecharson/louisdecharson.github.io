@@ -64,3 +64,17 @@ a.nav_button{
 	font: 11px "American Typewriter", serif;
 	color: #B2B2B2;
 }
+#noscript-warning{
+	font-family: sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 101;
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+	color: #fff;
+	background-color: #000099;
+	padding: 5px 0 5px 0;
+}
