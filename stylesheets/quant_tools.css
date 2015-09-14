@@ -49,7 +49,7 @@ ul li{
 }
 /* #Links
 ================================================== */
-a, a:visited { color: #333; text-decoration: underline; outline: 0; }
+a:visited { color: #333; text-decoration: underline; outline: 0; }
 a:hover, a:focus { color: #000; }
 p a, p a:visited { line-height: inherit; }
 a.nav_button{
@@ -61,7 +61,7 @@ a.nav_button{
 /* #MISC
 ================================================== */
 #soon{
-	font: 11px "American Typewriter", serif;
+	/*font: 11px "American Typewriter", serif;*/
 	color: #B2B2B2;
 }
 #noscript-warning{
