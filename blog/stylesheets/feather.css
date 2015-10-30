@@ -77,7 +77,6 @@
 		font-weight: normal;
 		font-size: 24px; line-height: 5px; margin-bottom: 25px;
 		 }
-	}
 			
 	#header h1 a:hover { color: #000; }
 		
@@ -98,7 +97,7 @@
 		CONTENT
 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */		
 		
-	tumblr.post {
+	.post {
 		width: 500px;
 		margin: 0 0 7em 0; }
 		
