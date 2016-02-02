@@ -18,17 +18,15 @@ body {
 		left:2%;
 		top:2%;
  }
- h1, h2, h3, h4, h5, h6 {
+ h1, h2, h3, h4 {
 		color: #181818;
 		font-family: "HelveticaNeue", serif;
 		font-weight: normal; }
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 a, h2 a, h3 a, h4 a, { font-weight: inherit; }
 	h1 { font-size: 30px; line-height: 20px; margin-bottom: 20px; margin-top: 10px}
 	h2 { font-size: 21px; line-height: 6px; margin-bottom: 4px; }
 	h3 { font-size: 17px; line-height: 5px; margin-bottom: 15px; margin-top: 25px}
-	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
-	h5 { font-size: 17px; line-height: 24px; }
-	h6 { font-size: 14px; line-height: 21px; }
+	h4 { font-size: 14px; line-height: 21px; }
 	.subheader { color: #777; }
 	p { margin: 0 3px 3px 10px; }
 	p img { margin: 0; }
@@ -96,5 +94,9 @@ a.nav_button{
 
 a#results{
 	color: #808080;
+}
+
+.footnote{
+	font-size: 12px;
 }
 
