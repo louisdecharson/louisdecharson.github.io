@@ -19,7 +19,7 @@ body {
 		top:2%;
  }
  h1, h2, h3, h4 {
-		color: #181818;
+		color: #E51B34;
 		font-family: "HelveticaNeue", serif;
 		font-weight: normal; }
 h1 a, h2 a, h3 a, h4 a, { font-weight: inherit; }
@@ -62,13 +62,14 @@ ul li{
 
 /* #Links
 ================================================== */
-a:visited { color: #333; text-decoration: underline; outline: 0; }
+a {text-decoration: none;}
+a:visited { color: #333; outline: 0; }
 a:hover, a:focus { color: #000; }
 p a, p a:visited { line-height: inherit; }
 a.nav_button{
 	text-decoration: none;
 	display: block;
-	white-space: nowrap; 
+	white-space: nowrap;
 }
 
 /* #MISC
@@ -99,4 +100,3 @@ a#results{
 .footnote{
 	font-size: 12px;
 }
-
