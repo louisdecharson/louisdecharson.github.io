@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* CSS Document */
+@viewport {
+    width: device-width;
+    zoom: .5;
+  }
+
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		NOT TUMBLR CSS 
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+#header h1 a {
+		color: #181818; 
+		font-family: "American Typewriter", Georgia, serif;
+		font-weight: normal;
+		font-size: 25px; line-height: 50px;
+		margin: 75px 0 0 0px;
+		text-decoration: none
+		 }
+
+#header h1 a:hover { color: #000; }
+
+.permalink a .permalink a:link .permalink a:visited {
+		color: #000000;	}
+
+	body{
+		background: #fff;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+/* 	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		 TUMBLR CSS 
+	++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.tumblr_posts {
+		font-family: Georgia, "Times New Roman", Times, serif;
+		font-size: 16px;
+		line-height: 1.8em;
+		color: #919191;
+		background: #fff;
+		padding: 60px 0px 0px 0px;	
+}
+.tumblr_post {
+		margin-bottom: 30px;
+		border-bottom: 1px solid black
+}
+.tumblr_photo_post {
+		margin-bottom: 30px;
+		border-bottom: 1px solid black;
+		max-width: 100%;
+    	height: auto;
+
+}
+.tumblr_title {	
+	color: #000000;
+	font: normal 18px "Georgia", "Times New Roman", Times, serif;
+	margin: 0 0 1.5em 0;
+}
+.tumblr_body img {	
+	width: auto;
+
+}
+.read_more_container {
+	
+}
+.read_more_container a {
+	
+}
+
+.tumblr.permalink a, .permalink a:link, .permalink a:visited {
+		float: right;
+		margin-top: -10px;
+		color: #005C00; }
+.tumblr.permalink a:hover {
+		float: right;
+		margin-top: -10px;
+		color: #3F3F3F; }
+
+.tumblr_quote {	
+
+}
+.tumblr_quote p {		
+
+}
+.tumblr_source {
+	
+}
+
+
