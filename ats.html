@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<head>
+  <title>Louis de Charsonville / ATS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./css/louis.css">
+
+<body>
+<a id="arrow" href="./">&larr;</a>    
+<div class="container-fluid">
+  <h1>ATS</h1>
+  <div class="row">
+    <div class="col-md-7">
+  <br>
+  <h3>Analysis of sound</h3>
+  <p>This project is a C++ little software for MacOsX I've written for a university project so it's does not purpoting anything. It's using <a href="http://www.openframeworks.cc/">OpenFrameworks</a>, a very cool open-source framework  for creative projects. It also makes an extensive use of the <a href="https://en.wikipedia.org/wiki/Cooley–Tukey_FFT_algorithm">Cooley-Tuckey Fast Fourier Transform</a> algorithm written by Sergey Chernenko that you can find <a href="http://www.librow.com/articles/article-10">here</a>.</p> 
+
+  <h3>What does ATS really do ? </h3>
+  <p>It analyses the sound listened by the micro of a computer, gets the spectrum frequency out of it and creates little animations based on those frequencies. It basically proposes four options :</p>
+  <ul>
+    <li>a broken line effect : a white line over a black screen that's moving as the same time as amplitudes and frequencies of the sound.</li>
+    <li>a line effect : lines appeared when the amplitudes of a frequency is exceeding a threshold (meaning that frequency is predominant in the song).</li>
+    <li>two equalizers : ugly and basic equalizers</li>
+    <li>a matrix effect : reproducing the green visual effects of The Matrix (just for fun).</li>
+  </ul>
+  <div></div>
+  The app has a Syphon client so it can be used along with other softwares like MadMapper.
+</div>
+<div class="col-md-5">
+  <figure>
+    <img src="./assets/ats_princeton.jpg" width="400" height=auto></img>
+    <em><figcaption>ATS in use, Princeton, 2014</figcaption></em>
+  </figure>
+</div>
+</div>
+<br>
+<a href="http:/www.github.com/louisdecharson/ats">See the project on Github.</a>
+<div></div>
+<br>
+  <a href="./ats.app">Download the app (for MacOs)</a>
+  <br>
+    <div id="push"></div>
+</body>

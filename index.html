@@ -1,86 +1,51 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Louis de Charsonville</title>
-	<meta name="description" content="Page de présentation">
-	<meta name="author" content="Louis de Charsonville">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<link rel="stylesheet" href="stylesheets/style.css">
-
-	<link rel="stylesheet" href="stylesheets/layout.css">
-
-	<!-- Google Analytics -->
-	<script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-52213062-1', 'louisdecharson.github.io');
-  ga('send', 'pageview');
-	</script>
-	
-	<!-- JAVASCRIPTS  -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="http://code.jquery.com/jquery-migrate-1.2.0.min.js"></script>
-	<script type="text/javascript" src="http://static.tumblr.com/bfhsl6l/OPmmmihm5/plugins.js"></script>
-	<script type="text/javascript">
-		function handleThis(formElm){window.location="/tagged/"+formElm.q.value+"";return false;};
-	</script>
-	<script src="scripts/menu.js"></script>
-	
-	<noscript>
-		<div id="noscript-warning">
-			louisdecharson.github.io works best with Javascript
-		</div>
-		<style type="text/css">
-	        .nojavascript{display:;}
-	        .javascript{display:none;}
-	    </style>
-	</noscript>
-
+  <title>Louis de Charsonville</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
-<body>	
-	<div class="title"> 
-	<h4>Louis de Charsonville</h4>
-	<div class="javascript">
-		<div id="nav_toggle_wrapper">
-			<div id="nav_toggle">
-				<span id="navSwitch">✕
-				</span>
-				<span id="open_menu" style="display:none">/Open Menu</span>
-			</div>
-			<div id="nav" style="display:none">
-				<div id="nav_table">
-					<ul>
-						<li><a class="nav_button">Sciences Po Courses</a>
-							<ul id="menu">
-								<li><a class="nav_button" href="/sciences-po/quantitative-tools.html">- Quantitative Tools - Autum 2016</a></li>
-								<li><a class="nav_button" href="/sciences-po/deflation">- Prep'ENA - La déflation (10.06.2015)</a></li>
-							</ul></li>
-						<li><a class="nav_button" href="eviews.html">Formation EViews</a></li>
-						<li><a class="nav_button" href="files/Resume_Louis_de_Charsonville.pdf">curriculum vitae</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="nojavascript">
-		<div id="nav">
-			<div id="nav_table">
-				<ul>
-					<li><a class="nav_button">Sciences Po Courses</a>
-						<ul id="menu">
-							<li><a class="nav_button" href="/sciences-po/quantitative-tools.html">- Quantitative Tools - Fall 15/16</a></li>
-							<li><a class="nav_button" href="/sciences-po/deflation">- Prep'ENA - La déflation (10.06.2015)</a></li>
-						</ul></li>
-					<li><a class="nav_button" href="files/resume.pdf">curriculum vitae</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="./css/louis.css">
+
+<body>
+<div class="container-fluid">
+<h1><a href="/">Louis de Charsonville</a></h1>
+<div class="row">
+  <div class="col-md-3">
+    <img src="assets/profil.png" width="230" height="230"></img>
+      <br>
+        <a href="./assets/resume_sept2016.pdf">Curriculum Vitae</a>
+        <div></div>
+        <a href="http://github.com/louisdecharson">Github</a>
+    </div>
+    <div class="col-md-9">
+      <h2>Work</h2>
+      <ul>
+        <li>Economist at <a href="http://banque-france.fr">Banque de France</a></li>
+        <li>Research assistant for Prof <a href="http://www.parisschoolofeconomics.com/zhuravskaya-ekaterina/">E.Zhuravskaya</a></li>
+      </ul>
+      <div id=push></div>
+      <h2>Teaching</h2>
+      <ul>
+        <li><a href="./sciences-po/quantitative-tools.html">Sciences Po - Quantitative Tools</li>
+        <li><a href="./sciences-po/deflation.html">Sciences Po - PrepEna</a></li>
+      </ul>
+      <div id=push></div>
+      <h2>Open source projects</h2>
+      <ul>
+        <li><a href="http://enselle.io">enSelle</a>: a website forecasting bikes in Paris bike sharing stations</li>
+        <li><a href="http://sdmx.herokuapp.com">SDMX + EVIEWS</a>: a web-app which allows to donwload timeseries from various institutions including Eurostat, ECB and Insee to EViews
+        <li><a href="./ats.html">Analyse Ton Son</a>: a MacOs software transforming input sound into graphical images to output on 3D structures.</li>
+      </ul>
+      <div id=push></div>
+      <h2>Others</h2>
+      <li><a href="./assets/formation_eviews.pdf">Programmer avec EViews</a> (one-day course on EViews at Banque de France)</li>
+    </div>
+</div>
 </body>
-</html>
+</html>  
+  
+  
