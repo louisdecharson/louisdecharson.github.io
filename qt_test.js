@@ -93,10 +93,10 @@ $(document).ready(function(){
     $("button").click(function(){
         $(".a1").text(Math.round(getStdev(S1)*1000)/1000);
         $(".a2").text(Math.round(getAbsdev(S1)*1000)/1000);
-        $(".a3").text(Math.round(getHarmonicMean(S1)*500)/1000);
+        $(".a3").text(Math.round(getHarmonicMean(S1))/1000);
         $(".a4").text(Math.round(100000*(S2[4]/100+1)*(S2[5]/100+1)*1000)/1000);
         $(".a5").text(Math.round(100/(1+S2[3]/100))+"%");
-        $(".a6").text(Math.round(getHarmonicMean(S3)*1000)/1000);
+        $(".a6").text(Math.round(getHarmonicMean(S3)*500)/1000);
         $(".a7").text(Math.round(S4[0]/(1+S4[1]/100)*1000)/1000);
         $(".a8").text(Math.round(getAVR(S5)*100*1000)/1000+"%");
     });
