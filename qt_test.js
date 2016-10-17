@@ -26,7 +26,7 @@ $(document).ready(function(){
         arr.forEach(function(it,ind) {
             absdev += Math.abs(it-m)/len;
         });
-        return Math.sqrt(absdev);
+        return absdev;
     };
 
     function getHarmonicMean(arr) {
