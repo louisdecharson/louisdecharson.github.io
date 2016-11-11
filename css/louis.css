@@ -1,7 +1,7 @@
 body {
     font-family :"Helvetica", "Arial";
     color: black ;
-    padding: 5% 20px 0 5%;
+    padding: 3% 3% 3% 3%;
     
 }
 
@@ -20,13 +20,14 @@ a:hover {
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: bold ;
     text-decoration: none ;
 }
 
 h1 {
     margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 h1 a {
@@ -41,8 +42,17 @@ h2 {
 
 h3 {
     font-size: 16px;
-    text-style: italic;
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
+
+h4 {
+    font-size: 14px;
+    font-style:italic;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
 
 img {
     padding: 5px;
@@ -51,6 +61,7 @@ img {
 ul {
     padding-left: 0px;
 }
+
 li {
     margin-left: 20px;
     padding-left: 0px;
@@ -83,10 +94,17 @@ td {
     padding-left: 5px;
 }
 
+
+ul.qtlist {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 ul.qtlist a  {
     text-decoration: none ;
     border-bottom: none !important ;
 }
+
 
 .sciencespo {
     color: #E51B34;
@@ -97,3 +115,9 @@ ul.qtlist a  {
     font-size: small;
 }
 
+#new {
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #E51B34;
+}
