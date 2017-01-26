@@ -19,6 +19,16 @@ a:hover {
     padding: 2px;
 }
 
+a#results.soon {
+    color: #B0B0B0;
+    border-bottom: none;
+}
+
+a#results.soon:hover {
+    text-decoration: none ;
+    background-color: white;
+    padding: 0px;
+}
 
 h1, h2, h3, h4 {
     font-weight: bold ;
