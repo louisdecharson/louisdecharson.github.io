@@ -35,14 +35,14 @@
     <p style="padding:4px;background-color:#ebeff0;"><em>Pierre is a French young man who wants to know if he is HIV-infected. He does a HIV-test which happens to be positive. <br/>What is the probability that Pierre is HIV-infected ?</p></em>
     <p>Let \(A\) be the probability of having AIDS, and \(B\) the probability that the test is positive.</p>
     <p>In France, the number of HIV-infected people was estimated at 152,000. The current population is 66 millions, so the proportion of HIV-infected people is <strong> 0.02%</strong>.</p>
-    <p>A HIV test return a positive or a negative result. There are four cases:
+    <p>A HIV test returns a positive or a negative result. There are four cases:
     <ul>
       <li>True positive: the test is positive and the patient is HIV-infected.</li>
       <li>False positive: the test is positive but the patient is not HIV-infected.</li>
       <li>True negative: the test is negative and the patient is not HIV-infected</li>
       <li>False negative: the test is negative but the patient is HIV-infected</li>
     </ul>
-    The sensitivity of a test is the probability of obtaining a positive result given that the patient is HIV-infected.  The specifity of a test is the propability of obtaining a negative result given that the patient is not HIV-infected. A good test has <i>both</i> a high sensitivity and high specificity. Lets say that both specificity and sensitivity are <strong>99.9%</strong>. 
+    The <i>sensitivity</i> of a test is the probability of obtaining a positive result given that the patient is HIV-infected.  The <i>specifity</i> of a test is the propability of obtaining a negative result given that the patient is not HIV-infected. A good test has <i>both</i> a high sensitivity and high specificity. Lets say that both specificity and sensitivity are <strong>99.9%</strong>. 
     </p>
     Let's recap. We know that:
     <ul>
@@ -51,7 +51,7 @@
       <li>\(P(\neg B | \neg A) = 99.9\%\)   with \(P(\neg X) = 1-P(X) \) being the probability that \(X\) is false.</li>
     </ul>
 
-   <p>We are looking for \(P(A|B)\) which is the probability that John is HIV-infected given that the test is positive. We use the Bayes theorem:</p>
+   <p>We are looking for \(P(A|B)\) which is the probability that Pierre is HIV-infected given that the test is positive. We use the Bayes theorem:</p>
    \[
    \begin{equation}
    P(A|B) = P(B|A) * \frac{P(A)}{P(B)}
