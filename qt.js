@@ -1,8 +1,8 @@
-var reveal = 2;
+var reveal = 3;
 
 $(document.body).ready(function(){
-    var results = $("a#results").length - reveal;
-    for (var k=0; k < results; k++) {
+    var results = $("a#results").length;
+    for (var k=reveal; k < results; k++) {
         $("a#results").eq(k).removeAttr("href");
         $("a#results").eq(k).addClass("soon");
     }
