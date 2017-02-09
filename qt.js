@@ -1,4 +1,4 @@
-var reveal = 3;
+var reveal = 2;
 
 $(document.body).ready(function(){
     var results = $("a#results").length;
