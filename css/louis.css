@@ -120,9 +120,11 @@ ul.qtlist a  {
     color: #E51B34;
 }
 
-.footnote {
+.footnote p {
     font-style: italic;
     font-size: small;
+    margin-top: 0 ;
+    margin-bottom:0 ;
 }
 
 #new {
