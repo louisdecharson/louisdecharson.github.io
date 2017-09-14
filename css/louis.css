@@ -104,6 +104,13 @@ td {
     padding-left: 5px;
 }
 
+td#exam {
+    color: #E51B34;
+}
+
+tr#holiday{
+    color: gray;
+}
 
 ul.qtlist {
     margin-top: 5px;
