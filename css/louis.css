@@ -140,3 +140,14 @@ ul.qtlist a  {
     font-weight: bold;
     color: #E51B34;
 }
+
+@media (max-width:500px) {
+    .chart{
+        width: 100%;
+    }
+}
+@media (min-width:500px){
+    .chart{
+        width: 60%;
+    }
+}
