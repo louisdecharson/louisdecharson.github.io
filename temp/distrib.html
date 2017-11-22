@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Standard Distributions</title>
+    <!-- META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./../css/louis.css"/>
+  </head>
+  <body>
+    <a id="arrow" href="http://louisdecharson.github.io/qt2.html">&larr;</a>
+    <center><h1>Standard Distributions</h1></center>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input distrib" type="radio" name="distrib" id="distrib" value="uniform"></input>
+              Uniform
+            </label>
+          </div>
+          <div class="input-group input-group-sm">
+            <span class="input-group-addon" id="sizing-addon1">a</span>
+            <input type="text" class="form-control" placeholder="a" aria-label="a" aria-describedby="basic-addon1" id="a"></input>
+          </div>
+          <div class="input-group input-group-sm">
+            <span class="input-group-addon" id="sizing-addon1">b</span>
+            <input type="text" class="form-control" placeholder="b" aria-label="b" aria-describedby="basic-addon1" id="b"></input>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input distrib" type="radio" name="distrib" id="distrib" value="binomial"></input>
+              Binomial
+            </label>
+          </div>
+          <div class="input-group input-group-sm">
+            <span class="input-group-addon" id="sizing-addon1">p</span>
+            <input type="text" class="form-control" placeholder="p" aria-label="p" aria-describedby="basic-addon1" id="p"></input>
+          </div>
+          <div class="input-group input-group-sm">
+            <span class="input-group-addon" id="sizing-addon1">n</span>
+            <input type="text" class="form-control" placeholder="n" aria-label="n" aria-describedby="basic-addon1" id="n"></input>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input  distrib" type="radio" name="distrib" id="distrib" value="poisson"></input>
+              Poisson
+            </label>
+          </div>
+          <div class="input-group input-group-sm">
+            <span class="input-group-addon" id="sizing-addon1">&lambda;</span>
+            <input type="text" class="form-control" placeholder="&lambda;" aria-label="lambda" aria-describedby="basic-addon1" id="lambda"></input>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input class="form-check-input distrib" type="radio" name="distrib" id="distrib" value="normal" checked></input>
+              Normal
+            </label>
+          </div>
+          <div class="input-group input-group-sm">
+            <span class="input-group-addon" id="sizing-addon1">&mu;</span>
+            <input type="text" class="form-control" placeholder="&mu;" aria-label="mu" aria-describedby="basic-addon1" value="0" id="mu"></input>
+          </div>
+          <div class="input-group input-group-sm">
+            <span class="input-group-addon" id="sizing-addon1">&sigma;</span>
+            <input type="text" class="form-control" placeholder="&sigma;" aria-label="sigma" aria-describedby="basic-addon1" value="1" id="sigma"></input>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <button type="button" class="btn btn-primary" id="go">Go !</button>
+    <center>
+      <hr>
+<div class="chart">
+<canvas id="myChart" width="5" height="5"></canvas>
+</center>
+   </div>
+
+
+    <!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js" integrity="sha256-vyehT44mCOPZg7SbqfOZ0HNYXjPKgBCaqxBkW3lh6bg=" crossorigin="anonymous"></script>
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <script src="./distrib.js"></script>
+      <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  </body>
+</html>
