@@ -53,7 +53,8 @@ var graphData = {
             type: 'line',
             borderColor: 'rgba(230,76,60,1)',
             backgroundColor: 'rgba(230,76,60,0.1)',
-            showLine: true
+            showLine: true,
+            fill: 'origin'
         }]
 };
 var graphTitle = 'Distribution';
@@ -82,6 +83,8 @@ document.getElementById('go').addEventListener('click', function() {
         graphData.datasets[0].data = normal(mu,sigma,10);
         graphData.datasets[0].label = 'Normal distribution';
         graphData.datasets[0].showLine = true;
+        graphData.datasets[0].fill = 'origin';
+        graphData.datasets[0].backgroundColor = 'rgba(230,76,60,0.1)';
         break;
     case "poisson":
         var lambda = parseFloat(document.getElementById('lambda').value);
@@ -89,6 +92,8 @@ document.getElementById('go').addEventListener('click', function() {
         graphData.datasets[0].data = poisson(lambda);
         graphData.datasets[0].label = 'Poisson distribution';
         graphData.datasets[0].showLine = false;
+        graphData.datasets[0].fill = false;
+        graphData.datasets[0].backgroundColor = 'rgba(255,255,255,0)';
         break;
     case "binomial":
         var n = parseInt(document.getElementById('n').value),
@@ -98,17 +103,24 @@ document.getElementById('go').addEventListener('click', function() {
             graphData.datasets[0].data = binomial(n,p);
             graphData.datasets[0].label = 'Binomial distribution';
             graphData.datasets[0].showLine = false;
+            graphData.datasets[0].fill = false;
+            graphData.datasets[0].backgroundColor = 'rgba(255,255,255,0)';
         } else {
             window.alert('p must be inferior or equal to 1');
         }
         break;
     case "uniform":
-        var a = parseFloat(document.getElementById('a').value),
-        b = parseFloat(document.getElementById('b').value);
-        graphData.labels = getX(1,a,b,1);
-        graphData.datasets[0].data = uniform(a,b);
-        graphData.datasets[0].label = 'Uniform distribution';
-        graphData.datasets[0].showLine = false;
+        var a = parseInt(document.getElementById('a').value),
+        b = parseInt(document.getElementById('b').value);
+        if (b > a) {
+            graphData.labels = getX(1,a,b,1);
+            graphData.datasets[0].data = uniform(a,b);
+            graphData.datasets[0].label = 'Uniform distribution';
+            graphData.datasets[0].showLine = false;
+            graphData.datasets[0].fill = false;
+        } else {
+            window.alert('b must be greater than a');
+        }
         break;
     }
     window.myBar.update();
