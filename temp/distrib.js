@@ -93,7 +93,7 @@ document.getElementById('go').addEventListener('click', function() {
         graphData.datasets[0].label = 'Poisson distribution';
         graphData.datasets[0].showLine = false;
         graphData.datasets[0].fill = false;
-        graphData.datasets[0].backgroundColor = 'rgba(255,255,255,0)';
+        graphData.datasets[0].backgroundColor = 'rgba(230,76,60,1)';
         break;
     case "binomial":
         var n = parseInt(document.getElementById('n').value),
@@ -104,7 +104,7 @@ document.getElementById('go').addEventListener('click', function() {
             graphData.datasets[0].label = 'Binomial distribution';
             graphData.datasets[0].showLine = false;
             graphData.datasets[0].fill = false;
-            graphData.datasets[0].backgroundColor = 'rgba(255,255,255,0)';
+            graphData.datasets[0].backgroundColor = 'rgba(230,76,60,1)';
         } else {
             window.alert('p must be inferior or equal to 1');
         }
@@ -118,6 +118,7 @@ document.getElementById('go').addEventListener('click', function() {
             graphData.datasets[0].label = 'Uniform distribution';
             graphData.datasets[0].showLine = false;
             graphData.datasets[0].fill = false;
+            graphData.datasets[0].backgroundColor = 'rgba(230,76,60,1)';
         } else {
             window.alert('b must be greater than a');
         }
