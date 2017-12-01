@@ -122,6 +122,11 @@ ul.qtlist a  {
     border-bottom: none !important ;
 }
 
+ul.spacedlist li {
+    margin-bottom: 5px;
+    list-style-type: arabic-indic;
+}
+
 
 .sciencespo {
     color: #E51B34;
