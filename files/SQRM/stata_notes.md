@@ -1,0 +1,3 @@
+# Stata Notes
+
+## Introduction

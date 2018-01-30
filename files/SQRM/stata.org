@@ -1,0 +1,58 @@
+#+TITLE: Stata Tutorial
+
+* Introduction
+1. Introduction of myself: former Sciences Po student, I am an *economist* at Banque
+   de France. 
+2. Introduction of the class: core notions of quantitative research 
+   for the social sciences: 
+   + review essential *statistical concepts*
+   + *survey data*
+   + *regression analysis*
+   + do all of this in *Stata*.
+3. Introduction of students: tell a bit about yourself, what have you done 
+   before Sciences Po, in which major are you graduating. 
+
+* Week 1 - Introduction
+** A quick tour of Stata
+*** Stata Interface
+5 docked windows : 
+
+| Windows    | Description                                 |
+|------------+---------------------------------------------|
+| Command    | where you type your commands                |
+| Results    | where Stata will display results            |
+| Review     | History of commands                         |
+| Variables  | List variables in the dataset               |
+| Properties | display properties of variables and dataset |
+|------------+---------------------------------------------|
+
+Other windows (see when needed)
++ Graph
++ Viewer
++ Variable manages
++ Data editor
++ Do file editor
+
+*** Typing commands
++ with command `display`, Stata can work as a calculator
+
+Most Stata command same the share syntax.
+>   command variable [, options]
+
+*** Getting help
+Stata has an excellent online help. Ask help with:
+>   help /command_name/
+
+Display help in the command line with 
+>   chelp /command_name/
+
+*** Loading a Sample Data File
+Stata comes with a few sample data files. 
+Have a complete list with 
+>   sysuse dir
+
+One of them is lifeexp.dta, which has data on life expectancy and gross national
+product (GNP) per capita in 1998 for 68 countries
+>   sysuse lifeexp, clear 
+
+** Week 2 - 

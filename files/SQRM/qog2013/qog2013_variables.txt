@@ -1,0 +1,846 @@
+-------------------------------------------------------------------------------------------------
+      name:  qog2013_variables
+       log:  /Users/fr/Documents/Teaching/SRQM/data/qog2013_variables.txt
+  log type:  text
+ opened on:  27 Jan 2015, 11:55:02
+
+Contains data from ~/Documents/Data/QOG/QOG Standard 2013 (December)/qog_std_cs.dta
+  obs:           193                          Quality of Government 2013
+ vars:           756                          19 Dec 2013 14:57
+ size:       781,843                          (_dta has notes)
+-------------------------------------------------------------------------------------------------
+              storage  display     value
+variable name   type   format      label      variable label
+-------------------------------------------------------------------------------------------------
+ccode           double %8.0g                  Country Code Numeric
+cname           str29  %29s                   Country Name
+ccodealp        str3   %3s                    3-letter Country Code
+ccodecow        int    %10.0g                 CCode
+ccodewb         int    %10.0g                 Country Code World Bank
+version         str12  %12s                   Version of the Dataset
+ajr_settmort    double %10.0g                 Log. Settler Mortality Est.
+al_ethnic       double %10.0g                 Ethnic fractionalization
+al_language     double %10.0g                 Linguistic fractionalization
+al_religion     double %10.0g                 Religious fractionalization
+bi_a_dd         int    %10.0g                 Animals Data Deficient
+bi_a_lc         int    %10.0g                 Animals Least Concern
+bi_a_lrcd       byte   %10.0g                 Animals Lower Risk/conservation dependent
+bi_a_nt         int    %10.0g                 Animals Near Threatened
+bi_a_subten     int    %10.0g                 Animals subtotal endangered
+bi_a_subtex     int    %10.0g                 Animals subtotal extinct
+bi_a_total      int    %10.0g                 Animals Total
+bi_p_dd         int    %10.0g                 Plants Data Deficient
+bi_p_lc         int    %10.0g                 Plants Least Concern
+bi_p_lrcd       int    %10.0g                 Plants Lower Risk/conservation dependent
+bi_p_nt         int    %10.0g                 Plants Near Threatened
+bi_p_subten     int    %10.0g                 Plants subtotal endangered
+bi_p_subtex     byte   %10.0g                 Plants subtotal extinct
+bi_p_total      int    %10.0g                 Plants Total
+bi_t_amph       int    %10.0g                 Threatened Amphibians
+bi_t_bird       int    %10.0g                 Threatened Birds
+bi_t_fish       int    %10.0g                 Threatened Fishes
+bi_t_inverts    int    %10.0g                 Threatened Other_Inverts
+bi_t_mam        int    %10.0g                 Threatened Mammals
+bi_t_moll       int    %10.0g                 Threatened Molluscs
+bi_t_plants     int    %10.0g                 Threatened Plants
+bi_t_rept       int    %10.0g                 Threatened Reptiles
+bi_t_total      int    %10.0g                 Threatened Total
+bl_asy15f       float  %7.2f                  Average Schooling Years, Female (15+)
+bl_asy15mf      float  %7.2f                  Average Schooling Years, Female and Male (15+)
+bl_asy25f       float  %7.2f                  Average Schooling Years, Female (25+)
+bl_asy25mf      float  %7.2f                  Average Schooling Years, Female and Male (25+)
+bl_lhc_15f      float  %7.2f                  Tertiary Complete, Female (15+)
+bl_lhc_15mf     float  %7.2f                  Tertiary Complete, Female and Male (15+)
+bl_lhc_25f      float  %7.2f                  Tertiary Complete, Female (25+)
+bl_lhc_25mf     float  %7.2f                  Tertiary Complete, Female and Male (25+)
+bl_lpc_15f      float  %7.2f                  Primary Complete, Female (15+)
+bl_lpc_15mf     float  %7.2f                  Primary Complete, Female and Male (15+)
+bl_lpc_25f      float  %7.2f                  Primary Complete, Female (25+)
+bl_lpc_25mf     float  %7.2f                  Primary Complete, Female and Male (25+)
+bl_lsc_15f      float  %7.2f                  Secondary Complete, Female (15+)
+bl_lsc_15mf     float  %7.2f                  Secondary Complete, Female and Male (15+)
+bl_lsc_25f      float  %7.2f                  Secondary Complete, Female (25+)
+bl_lsc_25mf     float  %7.2f                  Secondary Complete, Female and Male (25+)
+bl_lu_15f       float  %7.2f                  No Schooling, Female (15+)
+bl_lu_15mf      float  %7.2f                  No Schooling, Female and Male (15+)
+bl_lu_25f       float  %7.2f                  No Schooling, Female (25+)
+bl_lu_25mf      float  %7.2f                  No Schooling, Female and Male (25+)
+bti_cb          double %10.0g                 Consensus-Building
+bti_cps         double %10.0g                 Currency and Price Stability
+bti_ds          double %14.2f                 Democracy Status
+bti_ep          byte   %10.0g                 Economic Performance
+bti_ic          double %10.0g                 Intenational Cooperation
+bti_lod         double %10.0g                 Level of Difficulty
+bti_mes         double %14.2f                 Market Economy Status
+bti_mi          double %14.2f                 Management Index
+bti_mo          double %10.0g                 Market Organization
+bti_mp          double %14.2f                 Management Performance
+bti_pp          double %10.0g                 Political Participation
+bti_prp         double %10.0g                 Private Property
+bti_psi         double %10.0g                 Political and Social Integration
+bti_re          double %10.0g                 Resource Efficiency
+bti_rol         double %10.0g                 Rule of Law
+bti_sc          double %10.0g                 Steering Capability
+bti_sdi         double %10.0g                 Stability of Dem. Institutions
+bti_sl          byte   %10.0g                 Socioeconomic Level
+bti_st          double %10.0g                 Stateness
+bti_su          double %10.0g                 Sustainability
+bti_wr          double %10.0g                 Welfare Regime
+chga_demo       byte   %15.0g      chga       Democracy
+chga_hinst      byte   %38.0g      chga_2     Regime Institutions
+ciri_assn       int    %8.0g                  Freedom of Assembly and Association
+ciri_disap      int    %8.0g                  Disappearance
+ciri_dommov     int    %8.0g                  Freedom of Domestic Movement
+ciri_elecsd     byte   %8.0g                  Electoral Self-Determination
+ciri_empinx_new byte   %8.0g                  Empowerment Rights Index (New)
+ciri_empinx_old byte   %8.0g                  Empowerment Rights Index (Old)
+ciri_formov     int    %8.0g                  Freedom of Foreign Movement
+ciri_injud      int    %8.0g                  Independence of the Judiciary
+ciri_kill       int    %8.0g                  Extrajudicial Killing
+ciri_move_old   byte   %8.0g                  Freedom of Movement (Old)
+ciri_physint    byte   %8.0g                  Physical Integrity Rights Index
+ciri_polpris    int    %8.0g                  Political Imprisonment
+ciri_relfre_new int    %8.0g                  Freedom of Religion (New)
+ciri_relfre_old int    %8.0g                  Freedom of Religion (Old)
+ciri_speech     byte   %8.0g                  Freedom of Speech
+ciri_tort       int    %8.0g                  Torture
+ciri_wecon      int    %8.0g                  Women's Economic Rights
+ciri_wopol      int    %8.0g                  Women's Political Rights
+ciri_worker     int    %8.0g                  Workers Rights
+ciri_wosoc      int    %8.0g                  Women's Social Rights
+cm_cbgt80_89    double %14.2f                 Turnover of Central Bank Governor (1980-1989)
+cm_cbgt95_04    double %14.2f                 Turnover of Central Bank Governor (1995-2004)
+cm_cbi03        double %14.2f                 Central Bank Independence, Weighted (2003)
+cm_cbi03u       double %14.2f                 Central Bank Independence, Unweighted (2003)
+cm_cbi80_89     double %14.2f                 Central Bank Independence, Weighted (1980-1989)
+cm_cbi80_89u    double %14.2f                 Central Bank Independence, Unweighted (1980-1989)
+cm_cbt06        double %10.0g                 Transparency Index (2006)
+cm_cbt98        double %10.0g                 Transparency Index (1998)
+dpi_author      int    %8.0g                  State Government Authority over Taxing, Spending,
+                                                or Legislating
+dpi_auton       int    %8.0g                  Autonomous Regions
+dpi_cemo        int    %8.0g                  Is Chief Executive a Military Officer?
+dpi_checks      float  %9.0g       fake       Checks and Balances
+dpi_cl          int    %8.0g                  Closed List
+dpi_dhondt      int    %8.0g                  D'Hondt System
+dpi_dmmo        int    %8.0g                  Is Defense Minister a Military Officer?
+dpi_eage        int    %8.0g                  Age of Chief Executive Party
+dpi_eipc        float  %9.0g                  Executive Electoral Competitiveness
+dpi_erlc        int    %9.0g       rlc        Chief Executive Party Orientation
+dpi_exelec      int    %8.0g                  Presidential Election Held
+dpi_finter      int    %8.0g                  Finite Term in Office
+dpi_fraud       int    %8.0g                  Vote Fraud
+dpi_gf          float  %9.0g       fake       Government Fractionalization Index
+dpi_gpage1      int    %8.0g                  Age of Largest Government Party
+dpi_gpage2      int    %8.0g                  Age of 2nd Largest Government Party
+dpi_gpage3      int    %8.0g                  Age of 3rd Largest Government Party
+dpi_gprlc1      int    %9.0g       rlc        Largest Government Party Orientation
+dpi_gprlc2      int    %9.0g       rlc        2nd Largest Government Party Orientation
+dpi_gprlc3      int    %9.0g       rlc        3rd Largest Government Party Orientation
+dpi_gps1        int    %8.0g                  Number of Seats of Largest Government Party
+dpi_gps2        int    %8.0g                  Number of Seats of 2nd Largest Government Party
+dpi_gps3        int    %8.0g                  Number of Seats of 3rd Largest Government Party
+dpi_gpvs1       float  %9.0g                  Vote Share of Largest Government Party
+dpi_gpvs2       float  %9.0g                  Vote Share of 2nd Largest Government Party
+dpi_gpvs3       float  %9.0g                  Vote Share of 3rd Largest Government Party
+dpi_gs          float  %9.0g       fake       Number of Government Seats
+dpi_gvs         float  %9.0g                  Vote Share of Government Parties
+dpi_hlio        int    %8.0g                  Party of Chief Executive Length of Time in Office
+dpi_housesys    float  %12.0g      sys        Electoral Rule House
+dpi_legelec     int    %8.0g                  Legislative Election Held
+dpi_lipc        float  %9.0g                  Legislative Electoral Competitiveness
+dpi_maj         float  %9.0g       fake       Margin of Majority
+dpi_mdmh        float  %9.0g                  Mean District Magnitude House
+dpi_mdms        float  %9.0g                  Mean District Magnitude Senate
+dpi_mt          int    %8.0g                  Can Chief Executive Serve Multiple Terms
+dpi_muni        int    %44.0g      fed        Municipal Government
+dpi_nogp        int    %8.0g                  Number of Other Government Parties
+dpi_nogps       int    %8.0g                  Number of Seats of Other Government Parties
+dpi_noop        int    %8.0g                  Number of Other Opposition Parties
+dpi_noops       int    %8.0g                  Number of Seats of Other Opposition Parties
+dpi_nos         float  %9.0g       fake       Number of Opposition Seats
+dpi_numul       int    %8.0g                  Number of Seats of Non-Aligned Parties
+dpi_ogpvs       float  %9.0g                  Vote Share of Other Government Parties
+dpi_opage1      int    %8.0g                  Age of Largest Opposition Party
+dpi_opf         float  %9.0g       fake       Opposition Fractionalization Index
+dpi_oprlc1      int    %9.0g       rlc        Largest Opposition Party Orientation
+dpi_plurality   int    %8.0g                  Plurality
+dpi_polariz     float  %9.0g       fake       Polarization
+dpi_pr          int    %8.0g                  Proportional Representation
+dpi_pvfr        float  %9.0g                  President Percentage of Votes, last round
+dpi_pvor        float  %9.0g                  President Percentage of Votes, first round
+dpi_seats       int    %8.0g                  Total Seats in Legislature
+dpi_sensys      float  %12.0g      sys        Electoral Rule Senate
+dpi_slop1       int    %8.0g                  Number of Seats of Largest Opposition Party
+dpi_slop2       int    %8.0g                  Number of Seats of 2nd Largest Opposition Party
+dpi_slop3       int    %8.0g                  Number of Seats of 3rd Largest Opposition Party
+dpi_ssh         float  %9.0g                  Number of Seats in Senate/Total Seats in Both
+                                                Houses
+dpi_state       int    %44.0g      fed        State Government
+dpi_system      int    %29.0g      presparl   Political System
+dpi_tf          float  %9.0g       fake       Fractionalization Index
+dpi_thresh      float  %9.0g                  Vote Threshold
+dpi_ulprty      int    %8.0g                  Number of Non-Aligned Parties
+dpi_vslop1      float  %9.0g                  Vote Share of Largest Opposition Party
+dpi_vslop2      float  %9.0g                  Vote Share of 2nd Largest Opposition Party
+dpi_vslop3      float  %9.0g                  Vote Share of 3rd Largest Opposition Party
+dpi_vsoop       float  %9.0g                  Number of Votes of Other Opposition Parties
+dpi_vsul        float  %9.0g                  Vote Share of Non-Aligned Parties
+dpi_yct         int    %8.0g                  Years Left in Current Term
+dpi_yio         int    %8.0g                  Chief Executive Years in Office
+dr_eg           double %10.0g                 Economic Globalization
+dr_ig           double %10.0g                 Index of Globalization
+dr_pg           double %10.0g                 Political Globalization
+dr_sg           double %10.0g                 Social Globalization
+ef_bul          double %10.0g                 Ecofootprint, Built-up Land
+ef_carb         double %10.0g                 Ecofootprint, Carbon
+ef_crop         double %10.0g                 Ecofootprint, Cropland
+ef_ef           double %10.0g                 Ecofootprint, Total
+ef_fg           double %10.0g                 Ecofootprint, Fishing Ground
+ef_for          double %10.0g                 Ecofootprint, Forest
+ef_gl           double %10.0g                 Ecofootprint, Grazing Land
+eiu_cl          float  %9.0g                  Civil Liberties
+eiu_dpc         float  %9.0g                  Democratic Political Culture
+eiu_epp         float  %9.0g                  Electoral Process and Pluralism
+eiu_fog         float  %9.0g                  Functioning of Government
+eiu_iod         float  %9.0g                  Index of Democracy
+eiu_pp          float  %9.0g                  Political Participation
+el_avelf        double %10.0g                 Average Value of Ethnolinguistic Fractionalization
+el_gunn1        double %10.0g                 % of Pop. not Speaking the Official Language
+el_gunn2        double %10.0g                 % of Pop. not Speaking the Most Widely Used
+                                                Language
+env_tr_r        int    %10.0g                 Number of environmental agreements ratified
+env_tr_s        byte   %10.0g                 Number of environmental agreements signed
+env_treaty      int    %10.0g                 Number of environmental agreements total
+epi_acsat       double %10.0g                 Access to Sanitation
+epi_agsub       double %10.0g                 Agricultural Subsidies
+epi_aze         double %10.0g                 Critical Habitat Protection
+epi_chmort      double %10.0g                 Child Mortality
+epi_co2cap      double %10.0g                 CO2 Emissions (per capita)
+epi_co2gdp      double %10.0g                 CO2 Emissions (per GDP)
+epi_co2kwh      double %10.0g                 CO2 Emissions (per electricity generation)
+epi_epi         double %10.0g                 Environmental Performance Index
+epi_forcov      double %10.0g                 Forest Cover Change
+epi_forgrow     double %10.0g                 Forest Growing Stock
+epi_forloss     double %10.0g                 Forest Loss
+epi_fsoc        double %10.0g                 Fish Stocks Overexploited
+epi_indoor      double %10.0g                 Indoor Air Pollution
+epi_mpaeez      double %10.0g                 Marine Protection
+epi_pacov       double %10.0g                 Biome Protection
+epi_pm25        double %10.0g                 Particulate Matter
+epi_pops        byte   %10.0g                 Pesticide regulation
+epi_renew       double %10.0g                 Renewable Electricity
+epi_tceez       double %10.0g                 Coastal Shelf Fishing Pressure
+epi_watsup      double %10.0g                 Access to Drinking Water
+er_career       float  %9.0g                  Career Opportunities
+er_merit        float  %9.0g                  Meritocratic Recruitment
+er_salary       float  %9.0g                  Bureaucratic Compensation
+fao_fcc00_05    double %10.0g                 Forest Cover Change 2000-2005 (Annual %)
+fao_fcc05_10    double %10.0g                 Forest Cover Change 2005-2010 (Annual %)
+fao_fcc90_00    double %10.0g                 Forest Cover Change 1990-2000 (Annual %)
+fao_fe          long   %10.0g                 Fish Export (Tons)
+fao_fi          long   %10.0g                 Fish Import (Tons)
+fao_fpic        float  %9.0g                  Fish Production, Inland Capture
+fao_fpmc        double %10.0g                 Fish Production, Marine Capture
+fe_cultdiv      float  %9.0g                  Cultural Diversity
+fe_etfra        float  %9.0g                  Ethnic Fractionalization
+fe_lmin         float  %9.0g                  Largest Minority
+fe_plural       float  %9.0g                  Plurality Group
+ffp_fsi         double %10.0g                 Total
+fh_aor          byte   %10.0g                 Associational and Organizational Rights
+fh_cl           byte   %10.0g                 Civil Liberties
+fh_ep           byte   %10.0g                 Electoral Process
+fh_feb          byte   %10.0g                 Freedom of Expression and Belief
+fh_fog          byte   %10.0g                 Functioning of Government
+fh_fotpa5       byte   %10.0g                 Laws and regulations that influence media content
+                                                (2001-2011)
+fh_fotpb5       byte   %10.0g                 Political pressures and controls on media content
+                                                (2001-2011)
+fh_fotpc5       byte   %10.0g                 Economic influences over media content (2001-2011)
+fh_fotpsc5      byte   %10.0g                 Freedom of the Press, Score (2001-2011)
+fh_fotpst5      byte   %14.0g      fh_status
+                                              Freedom of the Press, Status (2001-2011)
+fh_ipolity2     float  %9.0g                  Freedom House/Imputed Polity
+fh_pair         byte   %10.0g                 Personal Autonomy and Individual Rights
+fh_polity2      float  %9.0g                  Freedom House/Polity
+fh_ppp          byte   %10.0g                 Political Pluralism and Participation
+fh_pr           byte   %10.0g                 Political Rights
+fh_rol          byte   %10.0g                 Rule of Law
+fh_status       byte   %14.0g      lblfhstatus
+                                              Status
+fi_ftradeint    double %10.0g                 Freedom to Trade Internationally (current)
+fi_ftradeint_cl double %14.2f                 Freedom to Trade Internationally (chain-linked)
+fi_index        double %14.2f                 Economic Freedom of the World Index (current)
+fi_index_cl     double %14.2f                 Economic Freedom of the World Index (chain-linked)
+fi_legprop      double %10.0g                 Legal Structure and Security of Property Rights
+                                                (current)
+fi_legprop_cl   double %14.2f                 Legal Structure and Security of Property Rights
+                                                (chain-linked)
+fi_reg          double %10.0g                 Regulation of Credit, Labor and Business (current)
+fi_reg_cl       double %14.2f                 Regulation of Credit, Labor and Business
+                                                (chain-linked)
+fi_sm           double %10.0g                 Access to Sound Money (current)
+fi_sm_cl        double %14.2f                 Access to Sound Money (chain_linked)
+fi_sog          double %10.0g                 Size of Government: Expenditures, Taxes and
+                                                Enterprises (current)
+fi_sog_cl       double %14.2f                 Size of Government: Expenditures, Taxes and
+                                                Enterprises (chain-linked)
+fk_ppi          double %10.0g                 Parliamentary Powers Index
+gd_ptsa         int    %10.0g                 Political Terror Scale – Amnesty International
+gd_ptss         int    %10.0g                 Political Terror Scale – US State Department
+gid_fptw        double %10.0g                 Female Professional and Technical Workers (%)
+gid_rfmi        byte   %10.0g                 Ratio of Female to Male Income
+gid_whp         byte   %10.0g                 Women in High Positions (%)
+gid_wip         double %10.0g                 Women in Parliament (%)
+gir_acrl        double %14.2f                 Anti-Corruption and Rule of Law
+gir_acs         double %14.2f                 Administration and Civil Service
+gir_csmai       double %14.2f                 Civil Society, Media, Access to Information
+gir_e           double %14.2f                 Elections
+gir_ga          double %14.2f                 Government Accountability
+gir_gii         double %14.2f                 Global Integrity Index
+gir_or          double %14.2f                 Oversight and Regulation
+gol_adm         double %9.0g                  Average District Magnitude
+gol_dist        long   %9.0g                  Districts
+gol_enep        double %9.0g                  Effective Number of Electoral Parties
+gol_enep1       double %9.0g                  Effective Number of Electoral Parties1
+gol_enepo       double %9.0g                  Effective Number of Electoral Parties (Others)
+gol_enpp        double %9.0g                  Effective Number of Parliamentary or Legislative
+                                                Parties
+gol_enpp1       double %9.0g                  Effective Number of Parliamentary or Legislative
+                                                Parties1
+gol_enppo       double %9.0g                  Effective Number of Parliamentary or Legislative
+                                                Parties (Others)
+gol_enpres      double %9.0g                  Effective Number of Presidential Candidates
+gol_est         long   %15.0g      gol_est_lab
+                                              Electoral System Type-3 classes
+gol_est_spec    long   %50.0g      gol_est_spec_lab
+                                              Electoral System Type-11 classes
+gol_inst        float  %30.0g      gol_inst_lab
+                                              Institution
+gol_legel       float  %9.0g                  Legislative Elections
+gol_mix         long   %16.0g      gol_mix_lab
+                                              Mixed Type
+gol_mt          long   %9.0g                  Multi-Tier Type
+gol_nos         long   %9.0g                  Number of Seats
+gol_pest        long   %21.0g      gol_pest_lab
+                                              Presidential Electoral System Type
+gol_pr          long   %60.0g      gol_pr_la
+                                              PR Type
+gol_preel       long   %9.0g                  Presidential Election
+gol_upseat      long   %9.0g                  Upper Seats
+gol_uptier      double %9.0g                  Upper Tier
+gr_cso          int    %8.0g                  Development Civil Society Organizations
+gr_csopop       float  %9.0g                  CSOs per Population
+h_alignl1       byte   %8.0g                  Alignment Executive/Legislative Chamber (lower)
+h_alignl1l2     byte   %8.0g                  Alignment Lower/Upper Legislative Chamber
+h_alignl2       byte   %8.0g                  Alignment Executive/Legislative Chamber (upper)
+h_f             byte   %8.0g                  Independent Sub-Federal Unit
+h_j             byte   %8.0g                  Independent Judiciary
+h_l1            byte   %8.0g                  Legislative Chamber
+h_l2            byte   %8.0g                  2nd Legislative Chamber
+h_lflo          float  %9.0g                  Legislative Fractionalization (lower)
+h_lfup          float  %9.0g                  Legislative Fractionalization (upper)
+h_polcon3       float  %9.3g                  Political Constraints Index III
+h_polcon5       float  %9.3g                  Political Constraints Index V
+hf_business     double %10.0g                 Business Freedom
+hf_corrupt      byte   %10.0g                 Freedom from Corruption
+hf_efiscore     double %10.0g                 Economic Freedom Index
+hf_financ       byte   %10.0g                 Financial Freedom
+hf_fiscal       double %10.0g                 Fiscal Freedom
+hf_govt         double %10.0g                 Freedom from Government
+hf_invest       byte   %10.0g                 Investment Freedom
+hf_labor        double %10.0g                 Labor Freedom
+hf_monetary     double %10.0g                 Monetary Freedom
+hf_prights      byte   %10.0g                 Property Rights
+hf_trade        double %10.0g                 Trade Freedom
+hg_gsi          byte   %8.0g                  Good Society Ranking
+ht_colonial     byte   %55.0g      ht_colonial
+                                              Colonial Origin
+ht_partsz       double %10.0g                 Size of Largest Party in Legislature (in Fractions)
+ht_partsz1      double %10.0g                 Size of Largest Party in Legislature (in
+                                                Fractions), Zero for One-Party Regimes
+ht_region       byte   %39.0g      ht_region
+                                              The Region of the Country
+ht_region2      byte   %39.0g      ht_region
+                                              The Region of the Country (alternative)
+ht_regtype      byte   %23.0g      ht_regtype
+                                              Regime Type
+ht_regtype1     byte   %14.0g      ht_regtype1
+                                              Regime Type (Collapsed)
+iag_hd          double %10.0g                 Human Development
+iag_iag         double %10.0g                 Index of African Governance
+iag_prh         double %10.0g                 Participation and Human Rights
+iag_rltc        double %10.0g                 Rule of Law, Transparency and Corruption
+iag_seo         double %10.0g                 Sustainable Economic Opportunity
+iag_ss          double %10.0g                 SafetyandSecurity Safety and Security
+icrg_qog        float  %9.0g                  ICRG Indicator of Quality of Government
+idea_bdac       byte   %25.0g      idealbl1   Ban on Anonymous Donations to Candidates
+idea_bdap       byte   %25.0g      idealbl1   Ban on Anonymous Donations to Political Parties
+idea_bdcc       byte   %25.0g      idealbl1   Ban on Corporate Donations to Candidates
+idea_bdcp       byte   %25.0g      idealbl1   Ban on Corporate Donations to Political Parties
+idea_bdfc       byte   %25.0g      idealbl1   Ban on Foreign Donations to Candidates
+idea_bdfp       byte   %25.0g      idealbl1   Ban on Foreign Donations to Political Parties
+idea_bdgcc      byte   %25.0g      idealbl1   Ban on Government Corporation Donations to
+                                                Candidates
+idea_bdgcp      byte   %25.0g      idealbl1   Ban on Government Corporation Donations to
+                                                Political Parties
+idea_bdo        byte   %25.0g      idealbl1   Ban on Other Form of Donation
+idea_bdtc       byte   %25.0g      idealbl1   Ban on Trade Union Donations to Candidates
+idea_bdtp       byte   %25.0g      idealbl1   Ban on Trade Union Donations to Political Parties
+idea_bsr        byte   %25.0g      idealbl1   Ban on using State Resources in Favor/Against
+                                                Political Party or Candidate
+idea_bvb        byte   %25.0g      idealbl1   Ban on Vote Buying
+idea_esf        byte   %21.0g      ideaesflbl
+                                              Electoral System Design
+idea_esl        byte   %20.0g      ideaesllbl
+                                              Electoral System for National Legislature
+idea_esp        byte   %58.0g      ideaesplbl
+                                              Electoral System for the President
+idea_frcc       byte   %25.0g      idealbl1   Candidates have to Report their Finances
+                                                (campaigns)
+idea_frpe       byte   %25.0g      idealbl1   Political Parties have to Report their Finances
+                                                (elections)
+idea_frpr       byte   %25.0g      idealbl1   Political Parties have to Report their Finances
+                                                (regularly)
+idea_ldc        byte   %25.0g      idealbl1   Limit on the Donation to Candidate
+idea_ldp        byte   %25.0g      idealbl1   Limit on the Donation to Political Parties
+                                                (time-period)
+idea_ldpe       byte   %25.0g      idealbl1   Limit on the Donation to Political Parties
+                                                (election)
+idea_lsc        byte   %25.0g      idealbl1   Limit on Candidates' Spending
+idea_lsp        byte   %25.0g      idealbl1   Limit on Political Parties' Spending
+idea_mc         byte   %25.0g      idealbl1   Free or Subsidized Access to Media for Candidates
+idea_mp         byte   %25.0g      idealbl1   Free or Subsidized Access to Media for Political
+                                                Parties
+idea_ofag       byte   %17.0g      idealbl2   Other Financial Advantages to Encourage Gender
+                                                Equality in Political Parties
+idea_pfp        byte   %17.0g      idealbl2   Direct Public Funding of Political Parties
+idea_pfpg       byte   %17.0g      idealbl2   Public Funding of Political Parties Related to
+                                                Gender Equality
+idea_rdid       byte   %17.0g      idealbl2   Political Parties/Candidates have to reveal
+                                                identity of donors
+idea_rip        byte   %17.0g      idealbl2   Information from Political Parties/Candidates have
+                                                to be made public
+ihme_ayef       double %10.0g                 Average Years of Education (Female)
+ihme_ayem       double %10.0g                 Average Years of Education (Male)
+ihme_fmort      double %14.2f                 Under-5 Mortality Rate (per 1,000 Live Births)
+ihme_mmr        double %10.0g                 Maternal Mortality Ratio (per 100,000 Live Births)
+ihme_nm         double %10.0g                 Neonatal Mortality Rate (per 1,000 Births)
+ihme_pnm        double %10.0g                 Postneonatal Mortality Rate (per 1,000 Births)
+ipu_w_lower     double %10.0g                 % Women in parliament (lower)
+ipu_w_upper     double %10.0g                 % Women in parliament (upper)
+irai_bhr        double %10.0g                 Building Human Resources
+irai_bre        double %10.0g                 Business Regulatory Environment
+irai_dp         double %10.0g                 Debt Policy
+irai_epru       double %10.0g                 Equity of Public Resource Use
+irai_erm        double %10.0g                 Efficiency of Revenue Mobilization
+irai_fp         double %10.0g                 Fiscal Policy
+irai_fs         double %10.0g                 Financial Sector
+irai_ge         double %10.0g                 Gender Equality
+irai_index      double %10.0g                 IDA Resource Allocation Index
+irai_mm         double %10.0g                 Macroeconomic Management
+irai_pies       double %10.0g                 Policies and Institutions for Environment
+irai_prrg       double %10.0g                 Property Rights and Rule-Based Government
+irai_qbfm       double %10.0g                 Quality of Budgetary and Financial Management
+irai_qpa        double %10.0g                 Quality of Public Administration
+irai_spl        double %10.0g                 Social Protection and Labor
+irai_t          double %10.0g                 Trade
+irai_tac        double %10.0g                 Transparency, Accountability and Corruption in the
+                                                Public Sector
+kun_cluster     byte   %8.0g                  Cluster memberships based on means
+kun_ecoabs      float  %9.0g                  Absolute economic institutional quality(simple
+                                                averages)
+kun_ecorel      float  %9.0g                  Economic institutional quality (relative factor
+                                                scores)
+kun_legabs      float  %9.0g                  Absolute legal institutional quality (simple
+                                                averages)
+kun_legrel      float  %9.0g                  Legal institutional quality (relative factor
+                                                scores)
+kun_polabs      float  %9.0g                  Absolute political institutional quality (simple
+                                                averages)
+kun_polrel      float  %9.0g                  Political institutional quality (relative factor
+                                                scores)
+kun_wiqreco_all float  %9.0g                  Economic World Institutional Quality Ranking (all
+                                                countries)
+kun_wiqreco_f~l float  %9.0g                  Economic World Institutional Quality Ranking
+                                                (countries with full observations)
+kun_wiqrleg_all float  %9.0g                  Legal World Institutional Quality Ranking (all
+                                                countries)
+kun_wiqrleg_f~l float  %9.0g                  Legal World Institutional Quality Ranking
+                                                (countries with full observations)
+kun_wiqrpol_all float  %9.0g                  Political World Institutional Quality Ranking (all
+                                                countries)
+kun_wiqrpol_f~l float  %9.0g                  Political World Institutional Quality Ranking
+                                                (countries with full observations)
+lp_catho80      double %10.0g                 Religion: Catholic
+lp_lat_abst     double %10.0g                 Latitude
+lp_legor        float  %31.0g      lp_legorlabel
+                                              Legal origin
+lp_muslim80     double %10.0g                 Religion: Muslim
+lp_no_cpm80     double %10.0g                 Religion: Other Denomination
+lp_protmg80     double %10.0g                 Religion: Protestant
+mad_gdp         double %10.0g                 GDP levels (million)
+mad_gdppc       double %10.0gc                GDP per Capita
+mad_gdppc1500   double %10.0g                 GDP per Capita 1500
+mad_gdppc1600   double %10.0gc                GDP per Capita 1600
+mad_gdppc1700   double %10.0gc                GDP per Capita 1700
+mad_gdppc1820   double %10.0gc                GDP per Capita 1820
+mad_gdppc1900   double %10.0gc                GDP per Capita 1900
+mad_pop         double %10.0g                 Population (thousand)
+nrpi_ecoprot    double %10.0g                 Ecoregion Protection
+nrpi_nrmi       double %10.0g                 Natural Resource Management
+ohi_afo         double %10.0g                 Artisanal fishing opportunities
+ohi_bd          double %10.0g                 Biodiversity
+ohi_bdh         double %10.0g                 Biodiversity - habitats
+ohi_bds         double %10.0g                 Biodiversity - species
+ohi_cp          double %10.0g                 Coastal protection
+ohi_cs          double %10.0g                 Carbon storage
+ohi_cw          double %10.0g                 Clean Waters
+ohi_fp          double %10.0g                 Food provision
+ohi_le          double %10.0g                 Coastal Livelihoods & Economies
+ohi_lee         double %10.0g                 Coastal Livelihoods & Economies - Economies
+ohi_lel         double %10.0g                 Coastal Livelihoods & Economies - Livelihoods
+ohi_mar         double %10.0g                 Food provision - Mariculture
+ohi_np          double %10.0g                 Natural products
+ohi_ohi         double %10.0g                 Ocean Health Index (Unweighted)
+ohi_sop         double %10.0g                 Sence of place
+ohi_sopis       double %10.0g                 Sence of place - Iconic Species
+ohi_soplsp      double %10.0g                 Sence of place - Lasting Special Places
+ohi_tr          double %10.0g                 Tourism and recreation
+ohi_wcf         double %10.0g                 Food provision - Wild caught fisheries
+p_autoc         byte   %10.0g                 Institutionalized Autocracy
+p_democ         byte   %10.0g                 Institutionalized Democracy
+p_durable       int    %10.0g                 Regime Durability
+p_flag          byte   %10.0g                 Tentative Coding
+p_fragment      byte   %10.0g                 Polity Fragmentation
+p_parcomp       byte   %10.0g                 The Competitiveness of Participation
+p_parreg        byte   %10.0g                 Regulation of Participation
+p_polity        byte   %10.0g                 Combined Polity Score
+p_polity2       byte   %10.0g                 Revised Combined Polity Score
+p_xconst        byte   %10.0g                 Executive Constraints (Decision Rules)
+p_xrcomp        byte   %10.0g                 Competitiveness of Executive Recruitment
+p_xropen        byte   %10.0g                 Openness of Executive Recruitment
+p_xrreg         byte   %10.0g                 Regulation of Chief Executive Recruitment
+pts_amn         long   %9.0g                  Political Terror Scale (Amnesty International)
+pts_ussd        long   %9.0g                  Political Terror Scale (US State Department)
+pwt_csg         float  %9.0g                  Consumption Share of GDP (%)
+pwt_er          float  %9.0g                  Exchange Rate
+pwt_gsg         float  %9.0g                  Government Share of GDP (%)
+pwt_isg         float  %9.0g                  Investment Share of GDP (%)
+pwt_openc       float  %9.0g                  Openness to Trade, Current Prices
+pwt_openk       float  %9.0g                  Openness to Trade, Constant Prices
+pwt_pop         float  %9.0g                  Population (Thousands)
+pwt_rgdpch      float  %9.0g                  Real GDP per capita (Constant Prices: Chain series)
+qs_closed       float  %9.0g                  Closed Public Administration
+qs_closed_cih   float  %9.0g                  Closed Public Administration – Confidence Interval
+                                                (High)
+qs_closed_cil   float  %9.0g                  Closed Public Administration – Confidence Interval
+                                                (Low)
+qs_impar        float  %9.0g                  Impartial Public Administration
+qs_impar_cih    float  %9.0g                  Impartial Public Administration – Confidence
+                                                Interval (High)
+qs_impar_cil    float  %9.0g                  Impartial Public Administration – Confidence
+                                                Interval (Low)
+qs_proff        float  %9.0g                  Professional Public Administration
+qs_proff_cih    float  %9.0g                  Professional Public Administration – Confidence
+                                                Interval (High)
+qs_proff_cil    float  %9.0g                  Professional Public Administration – Confidence
+                                                Interval (Low)
+r_atlas         double %10.0g                 Ethnolinguistic Fractionalization
+r_elf61         double %10.0g                 Ethnolinguistic fractionalization 1961
+r_elf85         double %10.0g                 Ethnolinguistic fractionalization 1985
+r_muller        double %10.0g                 Ethnolinguistic Fractionalization
+r_roberts       double %10.0g                 Ethnolinguistic Fractionalization
+ross_gas_exp    double %10.0g                 Gas exports, billion cubic feet per year
+ross_gas_netexp double %10.0g                 Net gas exports value, constant 2000 $
+ross_gas_nete~c double %10.0g                 Net gas exports value per capita, constant 2000 $
+ross_gas_price  double %10.0g                 Constant price of gas in 2000 $/mboe
+ross_gas_prod   double %10.0g                 Gas production, million barrels oil equiv.
+ross_gas_value  double %10.0g                 Gas production value in 2009 dollars
+ross_oil_exp    double %10.0g                 Oil exports, thousands of barrel per day
+ross_oil_netexp double %10.0g                 Net oil exports value, constant 2000 $
+ross_oil_nete~c double %10.0g                 Net oil exports value per capita, constant 2000 $
+ross_oil_price  double %10.0g                 Constant price of oil in 2000 $/brl
+ross_oil_prod   double %10.0g                 Oil production in metric tons
+ross_oil_value  double %10.0g                 Oil production value in 2009 dollars
+rsf_pfi         double %10.0g                 Press Freedom Index
+solt_ginet      float  %9.0g                  Gini Household Disposable Income
+solt_ginmar     float  %9.0g                  Gini Household Gross Income
+solt_redist     float  %9.0g                  Est. % Reduction Gross Income Ineq.
+t_alldem        byte   %14.2f                 Democratic All Year from 1930 to 1995
+t_bribe         byte   %14.2f                 Have paid a bribe in any form
+t_corr          double %14.2f                 Common to pay irregular additional payments
+t_demyrs        byte   %14.2f                 Years of Democracy
+t_fed           byte   %14.2f                 Classified as a Federation
+t_fuel          double %14.2f                 Mineral Fuels in Manufacturing Exports
+t_paper         int    %10.0g                 Newspaper per 1000 inhabitants in 1996
+t_subexp        double %14.2f                 Subnational share of Expenditures
+t_subrev        double %14.2f                 Subnational share of Revenues
+t_tvsets        int    %10.0g                 Television sets per 1000 inhabitants in 1997
+t_unicri        double %10.0g                 Bribery to Government Officials
+t_yot           byte   %10.0g                 Year Opened to Trade
+ti_cpi          double %10.0g                 Corruption Perceptions Index
+ti_cpi_max      double %10.0g                 Corruption Perceptions Index – Max Range
+ti_cpi_min      double %10.0g                 Corruption Perceptions Index – Min Range
+uds_mean        double %10.0g                 Unified Demo. Score Posterior (Mean)
+uds_median      double %10.0g                 Unified Demo. Score Posterior (Median)
+uds_pct025      double %10.0g                 Unified Demo. Score Posterior (2.5 percentile)
+uds_pct975      double %10.0g                 Unified Demo. Score Posterior (97.5 percentile)
+uds_sd          double %10.0g                 Unified Demo. Score Posterior (Std. Dev.)
+undp_gii        double %10.0g                 Gender Inequality Index
+undp_hdi        double %10.0g                 Human Development Index
+une_pef         double %10.0g                 Primary Education Enrollment, Female
+une_pem         double %10.0g                 Primary Education Enrollment, Male
+une_pet         double %10.0g                 Primary Education Enrollment, Total
+une_ppep        double %10.0g                 Percentage of Private Enrollment, Primary
+une_ppepre      double %10.0g                 Percentage of Private Enrollment, Pre-Primary
+une_ppes        double %10.0g                 Percentage of Private Enrollment, Secondary
+une_preef       double %10.0g                 Pre-Primary Education Enrollment, Female
+une_preem       double %10.0g                 Pre-Primary Education Enrollment, Male
+une_preet       double %10.0g                 Pre-Primary Education Enrollment, Total
+une_sef         double %10.0g                 Secondary Education Enrollment, Female
+une_sem         double %10.0g                 Secondary Education Enrollment, Male
+une_set         double %10.0g                 Secondary Education Enrollment, Total
+une_tef         double %10.0g                 Tertiary Education Enrollment, Female
+une_tem         double %10.0g                 Tertiary Education Enrollment, Male
+une_tet         double %10.0g                 Tertiary Education Enrollment, Total
+unna_er         double %10.0g                 Exchange Rate
+unna_gdp        double %10.0g                 Real GDP
+unna_pop        double %10.0g                 Population
+van_comp        double %10.0g                 Competition
+van_index       double %10.0g                 Index of Democratization
+van_part        double %10.0g                 Participation
+wbgi_cce        double %10.0g                 Control of Corruption - Estimate
+wbgi_ccn        byte   %10.0g                 Control of Corruption - Number of Sources
+wbgi_ccs        double %10.0g                 Control of Corruption - Standard Errors
+wbgi_gee        double %10.0g                 Government Effectiveness - Estimate
+wbgi_gen        byte   %10.0g                 Government Effectiveness - Number of Sources
+wbgi_ges        double %10.0g                 Government Effectiveness - Standard Errors
+wbgi_pse        double %10.0g                 Political Stability - Estimate
+wbgi_psn        byte   %10.0g                 Political Stability - Number of Sources
+wbgi_pss        double %10.0g                 Political Stability - Standard Errors
+wbgi_rle        double %10.0g                 Rule of Law - Estimate
+wbgi_rln        byte   %10.0g                 Rule of Law - Number of Sources
+wbgi_rls        double %10.0g                 Rule of Law - Standard Errors
+wbgi_rqe        double %10.0g                 Regulatory Quality - Estimate
+wbgi_rqn        byte   %10.0g                 Regulatory Quality - Number of Sources
+wbgi_rqs        double %10.0g                 Regulatory Quality - Standard Errors
+wbgi_vae        double %10.0g                 Voice and Accountability - Estimate
+wbgi_van        byte   %10.0g                 Voice and Accountability - Number of Sources
+wbgi_vas        double %10.0g                 Voice and Accountability - Standard Errors
+wdh_ygm90_91    double %10.0g                 Years in Good Mood (1990-1991)
+wdh_ylh90_91    double %10.0g                 Years Lived Happy (1990-1991)
+wdh_ylh90_95    double %10.0g                 Years Lived Happy (1990-1995)
+wdh_ylh90_98    double %10.0g                 Years Lived Happy (1990-1998)
+wdh_yls90_91    double %10.0g                 Years Lived Satisfied (1990-1991)
+wdh_yls90_95    double %10.0g                 Years Lived Satisfied (1990-1995)
+wdh_yls90_98    double %10.0g                 Years Lived Satisfied (1990-1998)
+wdi_aas         int    %10.0g                 Access to Adequate Sanitation (%)
+wdi_aid         double %10.0g                 Net Development Assistance and Aid (Constant USD)
+wdi_aidcu       double %10.0g                 Net Development Assistance and Aid (Current USD)
+wdi_area        double %10.0g                 Land Area (sq.km)
+wdi_ase         double %10.0g                 Agriculture's Share of Economy (% of GDP)
+wdi_brd         long   %10.0g                 Battle-Related Deaths
+wdi_cgd         double %10.0g                 Central Government Debt (% of GDP)
+wdi_co2         double %10.0g                 Carbon Dioxide Emissions (Tons per Capita)
+wdi_eodb        int    %10.0g                 Ease of Doing Business
+wdi_epc         double %10.0g                 Electric Power Consumption (kWh per Capita)
+wdi_eu          double %10.0g                 Energy Use (kg of Oil Equivalent per Capita)
+wdi_exp         double %10.0g                 Exports (% of GDP)
+wdi_fdi         double %10.0g                 Foreign Direct Investments, Net Inflows (% of GDP)
+wdi_fe          double %10.0g                 Fuel Exports (% of Merchandise Exports)
+wdi_fmort       double %10.0g                 Mortality Rate, Under-5 (per 1,000)
+wdi_fr          double %10.0g                 Fertility Rate (Births per Woman)
+wdi_fw          double %10.0g                 Freshwater Withdrawels (% of Internal Resources)
+wdi_gbds        double %10.0g                 Government Budget Deficit/Surplus (% of GDP)
+wdi_gce         double %10.0g                 Government COnsumption Expenditure (% of GDP)
+wdi_gdp         double %10.0g                 GDP, PPP (Constant International USD)
+wdi_gdpc        double %10.0g                 GDP per Capita, PPP (Constant International USD)
+wdi_gdpcgr      double %10.0g                 GDP per Capita Growth (%)
+wdi_gdpcu       double %10.0g                 GDP (Current USD)
+wdi_gdpgr       double %10.0g                 GDP Growth (%)
+wdi_ge          double %10.0g                 Government Expense (% of GDP)
+wdi_gew         double %10.0g                 Compensation of employees (% of expense)
+wdi_gini        double %10.0g                 Gini Index
+wdi_gni         double %10.0g                 GNI, Atlas Method (Current USD)
+wdi_gnipc       long   %10.0g                 GNI per Capita, Atlas Method (Current USD)
+wdi_gr          double %10.0g                 Government Revenue (% of GDP)
+wdi_gris        double %10.0g                 Gender Ratio in School
+wdi_hec         double %10.0g                 Health Expenditure per Capita, PPP (Constant USD)
+wdi_hiv         double %10.0g                 Prevalence of HIV (% of Population Aged 15-49)
+wdi_imp         double %10.0g                 Imports (% of GDP)
+wdi_inet        double %10.0g                 Internet Users (per 100 People)
+wdi_infl        double %10.0g                 Inflation (%)
+wdi_ise         double %10.0g                 Industry's Share of Economy (% of GDP)
+wdi_isl20       double %10.0g                 Income Share of Lowest 20%
+wdi_iws         int    %10.0g                 Access to Improved Water (%)
+wdi_lifexp      double %10.0g                 Life Expectancy at Birth (Years)
+wdi_lue         double %10.0g                 Long-Term Unemployment (%)
+wdi_me          double %10.0g                 Merchandise Exports
+wdi_megdp       double %10.0g                 Military Expenditure (% of GDP)
+wdi_mege        double %10.0g                 Military Expenditure (% of Government Expenditure)
+wdi_mort        double %10.0g                 Infant Mortality Rate (per 1,000 Live Births)
+wdi_mpa         double %10.0g                 Protected Areas, Marine
+wdi_oame        double %10.0g                 Ores and Metals Exports (% of Merchandise Exports)
+wdi_pa          double %10.0g                 Protected Areas, Marine & Terrestrial
+wdi_pb125       double %10.0g                 Population Below $1.25 a Day (%)
+wdi_pb2         double %10.0g                 Population Below $2 a Day (%)
+wdi_pbpl        double %10.0g                 Population Below National Poverty Line (%)
+wdi_pl          double %10.0g                 Phone Lines (per 100 People)
+wdi_pop         double %10.0g                 Population
+wdi_prhe        double %10.0g                 Private Health Expenditure (% of GDP)
+wdi_puhe        double %10.0g                 Public Health Expenditure (% of GDP)
+wdi_rir         double %10.0g                 Real Interest Rate (%)
+wdi_sse         double %10.0g                 Service's Share of Economy (% of GDP)
+wdi_tds         double %10.0g                 Total Debt Service (% of GNI)
+wdi_the         double %10.0g                 Total Health Expenditure (% of GDP)
+wdi_tot         double %10.0g                 Terms of Trade
+wdi_tpa         double %10.0g                 Protected Areas, Terrestrial
+wdi_tr          double %10.0g                 Tax Revenue (% of GDP)
+wdi_trsb        int    %10.0g                 Time Required to Start Business (Days)
+wdi_ttr         double %10.0g                 Total Trade (% of GDP)
+wdi_ue          double %10.0g                 Unemployment (%)
+wdi_urban       double %10.0g                 Urban Population (%)
+wdi_wip         double %10.0g                 Women in Parliament (%)
+wef_aas         double %10.0g                 Available airline seat kms/week, millions
+wef_amp         double %10.0g                 Effectiveness of anti-monopoly policy
+wef_audit       double %10.0g                 Strength of auditing and reporting standards
+wef_bccv        double %10.0g                 Business costs of crime and violence
+wef_bct         double %10.0g                 Business costs of terrorism
+wef_bd          double %10.0g                 Brain drain
+wef_bgr         double %10.0g                 Burden of government regulation
+wef_bihiv       double %10.0g                 Business impact of HIV/AIDS
+wef_bim         double %10.0g                 Business impact of malaria
+wef_bit         double %10.0g                 Business impact of tuberculosis
+wef_ccr         double %10.0g                 Country credit rating
+wef_chiv        double %10.0g                 HIV prevalence, %
+wef_ci          double %10.0g                 Capacity for innovation
+wef_cm          double %10.0g                 Malaria cases/100,000 pop.
+wef_ct          double %10.0g                 Tuberculosis cases/100,000 pop.
+wef_dpf         double %10.0g                 Diversion of public funds
+wef_dtsb        double %10.0g                 No. days to start a business
+wef_ebf         double %10.0g                 Ethical behavior of firms
+wef_eet         double %10.0g                 Extent and effect of taxation
+wef_elec        double %10.0g                 Quality of electricity supply
+wef_fgo         double %10.0g                 Favoritism in decisions of government officials
+wef_gbb         double %10.0g                 Government budget balance, %
+wef_gci         double %10.0g                 Global Competitiveness Index
+wef_gd          double %10.0g                 General government debt, %
+wef_gdp         double %10.0g                 GDP (US$ billions)
+wef_gdpc        double %10.0g                 GDP per capita (US$)
+wef_gdpp1       double %10.0g                 GDP (PPP) as Share of World GDP
+wef_gdpp2       double %10.0g                 GDP (PPP)
+wef_gend        double %10.0g                 Gender Gap Index Score
+wef_gns         double %10.0g                 Gross national savings, %
+wef_gsibp       double %10.0g                 Government services for improved business
+                                                performance
+wef_ias         double %10.0g                 Internet access in schools
+wef_ilc         double %10.0g                 Intensity of local competition
+wef_imort       double %10.0g                 Infant mortality, deaths/1,000 live births
+wef_infl        double %10.0g                 Inflation, annual %
+wef_ipb         double %10.0g                 Irregular payments and bribes
+wef_ipr         double %10.0g                 Intellectual property protection
+wef_ji          double %10.0g                 Judicial independence
+wef_lifexp      double %10.0g                 Life expectancy, years
+wef_md          double %10.0g                 Extent of market dominance
+wef_mobile      double %10.0g                 Mobile telephone subscriptions/100 pop.
+wef_oc          double %10.0g                 Organized crime
+wef_pop         double %10.0g                 Population (millions)
+wef_pr          double %10.0g                 Property rights
+wef_ptp         double %10.0g                 Public trust in politicians
+wef_ptsb        double %10.0g                 No. procedures to start a business
+wef_qair        double %10.0g                 Quality of air transport infrastructure
+wef_qes         double %10.0g                 Quality of the educational system
+wef_qoi         double %10.0g                 Quality of overall infrastructure
+wef_qpe         double %10.0g                 Quality of primary education
+wef_qport       double %10.0g                 Quality of port infrastructure
+wef_qrail       double %10.0g                 Quality of railroad infrastructure
+wef_qroad       double %10.0g                 Quality of roads
+wef_qsri        double %10.0g                 Quality of scientific research institutions
+wef_rps         double %10.0g                 Reliability of police services
+wef_tax         double %10.0g                 Total tax rate, %
+wef_tele        double %10.0g                 Fixed telephone lines/100 pop.
+wef_tgp         double %10.0g                 Transparency of government policymaking
+wef_uic         double %10.0g                 University-industry collaboration in R&D
+wef_wgs         double %10.0g                 Wastefulness of government spending
+wef_wlf         double %10.0g                 Women in labor force, ratio to men
+wr_nonautocracy byte   %27.0g      wr_nonauto
+                                              Non-Autocracy
+wr_regtype      byte   %26.0g      wr_regt    Regime Type
+wri_pa          double %10.0g                 Protected Areas: % of Total Land Area
+wttc_ttper      double %10.0g                 Travel & Tourism Contribution to GDP (% of GDP)
+wttc_ttusd      double %10.0g                 Travel & Tourism Contribution to GDP (2011 US$ bn)
+wvs_a008        float  %8.0g                  Feeling of happiness
+wvs_a009        float  %8.0g                  State of health
+wvs_a165        float  %8.0g                  Most people can be trusted
+wvs_a170        float  %8.0g                  How satisfied are you with your life
+wvs_a173        float  %8.0g                  How much freedom you feel
+wvs_abort       float  %9.0g                  Abortion is justifiable
+wvs_auth        float  %9.0g                  Respect for authority
+wvs_auton       float  %9.0g                  Autonomy index
+wvs_b001        float  %8.0g                  Would give part of my income for environment
+wvs_b002        float  %8.0g                  Increase in taxes if extra money used to prevent
+                                                environmental pollution
+wvs_b003        float  %8.0g                  Government should reduce environmental pollution
+wvs_b008        float  %8.0g                  Environmental vs economic growth
+wvs_c006        float  %8.0g                  Satisfaction with the financial situation of
+                                                household
+wvs_e023        float  %8.0g                  Interested in politics
+wvs_e033        float  %8.0g                  Self positioning in political scale
+wvs_e035        float  %8.0g                  Incomes more equal
+wvs_e036        float  %8.0g                  Private ownership of business
+wvs_e037        float  %8.0g                  Government more responsibility
+wvs_e039        float  %8.0g                  Competition is good
+wvs_e069_01     float  %8.0g                  Confidence: churches
+wvs_e069_02     float  %8.0g                  Confidence: armed forces
+wvs_e069_04     float  %8.0g                  Confidence: the press
+wvs_e069_05     float  %8.0g                  Confidence: labor unions
+wvs_e069_06     float  %8.0g                  Confidence: the police
+wvs_e069_07     float  %8.0g                  Confidence: parliament
+wvs_e069_08     float  %8.0g                  Confidence: the civil services
+wvs_e069_10     float  %8.0g                  Confidence: television
+wvs_e069_11     float  %8.0g                  Confidence: the government
+wvs_e069_12     float  %8.0g                  Confidence: the political parties
+wvs_e069_13     float  %8.0g                  Confidence: major companies
+wvs_e069_14     float  %8.0g                  Confidence: the environmental protection movement
+wvs_e069_15     float  %8.0g                  Confidence: the women's movement
+wvs_e069_17     float  %8.0g                  Confidence: the justice system
+wvs_e069_18     float  %8.0g                  Confidence: the European Union
+wvs_e069_20     float  %8.0g                  Confidence: the United Nations
+wvs_e114        float  %8.0g                  Having a strong leader
+wvs_e115        float  %8.0g                  Having experts make decisions
+wvs_e116        float  %8.0g                  Having the army rule
+wvs_e117        float  %8.0g                  Having a democratic political system
+wvs_e124        float  %8.0g                  Respect for individual human rights
+wvs_f114        float  %8.0g                  Justifiable: claiming government benefits
+wvs_f115        float  %8.0g                  Justifiable: avoiding a fare on public transport
+wvs_f116        float  %8.0g                  Justifiable: cheating on taxes
+wvs_f117        float  %8.0g                  Justifiable: someone accepting a bribe
+wvs_gen         float  %9.0g                  Gender Equality Scale
+wvs_happy       float  %9.0g                  Happiness
+wvs_homo        float  %9.0g                  Homosexuality is justifiable
+wvs_lib         float  %9.0g                  Liberty and participation
+wvs_lifsat      float  %9.0g                  Life satisfaction
+wvs_module      float  %21.0g      wvs_module
+                                              WVS module
+wvs_pet         float  %9.0g                  Public self-expression
+wvs_pm12        float  %9.0g                  Post-Materialism 12-item index
+wvs_pm4         float  %9.0g                  Post-Materialism 4-item index
+wvs_proud       float  %9.0g                  National pride
+wvs_rel         float  %9.0g                  Religiousness
+wvs_rs          float  %9.0g                  Religiosity Scale
+wvs_secrat      float  %9.0g                  Secular-rational values
+wvs_selfexp1    float  %9.0g                  Selfexpression values 1
+wvs_selfexp2    float  %9.0g                  Selfexpression values 2
+wvs_selfexp3    float  %9.0g                  Selfexpression values 3
+wvs_theo        float  %9.0g                  Support for theocracy
+wvs_tol         float  %9.0g                  Tolerance of diversity
+wvs_trust       float  %9.0g                  Interpersonal trust
+-------------------------------------------------------------------------------------------------
+Sorted by:  ccode
+     Note:  dataset has changed since last saved
+      name:  qog2013_variables
+       log:  /Users/fr/Documents/Teaching/SRQM/data/qog2013_variables.txt
+  log type:  text
+ closed on:  27 Jan 2015, 11:55:02
+-------------------------------------------------------------------------------------------------
