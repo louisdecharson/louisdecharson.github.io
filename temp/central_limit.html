@@ -1,53 +1,54 @@
 <html>
-  <head>
-    <title>Theorem Central Limit</title>
-    <!-- META -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
+    <head>
+        <title>Theorem Central Limit</title>
+        <!-- META -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./../css/louis.css"/>
-  </head>
-  <body>
-    <a id="arrow" href="http://louisdecharson.github.io/qt2.html">&larr;</a>
-    <center><h1>Theorem Central Limit - An Illustration</h1></center>
-      <div class="jumbotron">
-  <p class="lead">The central limit theorem (CLT) states that the normalized sum of independent random variables tends toward a <strong>normal distribution</strong> even if the original variables themselves are not normally distributed.</p>
-        <hr class="my-4">
-        <strong>Theorem</strong><br/>
-         <p>Let \(\{X_1 \dots X_n\}\) be  a sequence of  \(n\)  independent and identically distributed random variables drawn from distributions of expected values given by \(\mu\) and finite variances given by \(\sigma^2\). Let \(S_n\) the sample average:
-      \[S_n = \frac{X_1 + X_2 + \dots + X_n}{n} \]
-      Then as \(n\) tends to the infinite, we have the convergence (<a href="https://en.wikipedia.org/wiki/Convergence_in_distribution">in distribution</a>) of \(S_n\) towards a normal distribution:
-\[\frac{S_n-\mu}{\frac{\sigma}{\sqrt{n}}} \longrightarrow \mathcal{N}(0,1)\] 
-      </p>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="./../css/louis.css"/>
+    </head>
+    <body>
+        <a id="arrow" href="http://louisdecharson.github.io/qt2.html">&larr;</a>
+        <center><h1>Theorem Central Limit - An Illustration</h1></center>
+        <div class="jumbotron">
+            <p class="lead">The central limit theorem (CLT) states that the average of independent random variables tends toward a <strong>normal distribution</strong> even if the original variables themselves are not normally distributed.</p>
+            <hr class="my-4">
+            <strong>Theorem</strong><br/>
+            <p>Let \(\{X_1 \dots X_n\}\) be  a sequence of  \(n\)  independent and identically distributed random variables drawn from distributions of expected values given by \(\mu\) and finite variances given by \(\sigma^2\). Let \(S_n\) the sample average:
+                \[S_n = \frac{X_1 + X_2 + \dots + X_n}{n} \]
+                Then as \(n\) tends to the infinite, we have the convergence (<a href="https://en.wikipedia.org/wiki/Convergence_in_distribution">in distribution</a>) of \(S_n\) towards a normal distribution:
+                \[\frac{S_n-\mu}{\frac{\sigma}{\sqrt{n}}} \longrightarrow \mathcal{N}(0,1)\] 
+            </p>
+        </div>
+        <div>
+            <p>We are running 1000 times the sum of <i>n</i> draws in an uniform distribution \(\mathcal{U}(0,1)^{*}\). <br/>Select <i>n</i> :</p>
+            <form>
+                <div class="input-group" style="width:30%">
+                    <label>Number of draws (n)
+                        <input class="form-control" type="text" name="n" value="100" id="n">
+                    </label>
+                    <label>Precision <i>(control the number of bars in the graph)</i>
+                        <input class="form-control" type="text" name="precision" value="20" id="precision">
+                    </label>
+                </div>
+            </form>
+            <button type="button" class="btn btn-primary" id="go">Simulate !</button>
+        </div>
+        <center>
+            <h4>Simulated distributions</h4>
+            <div class="chart">
+                <canvas id="myChart" width="10" height="10"></canvas>
+            </div>
+        </center>
+        <p>\(^{*}\) Mean of \(\;\mathcal{U}(0,1)\) is \(\mu = 0.5\), standard deviation is \(\sigma = \frac{1}{2\sqrt{3}}\).</p>
+        
 
-</div>
-    <div>
-      <p>We are running 1000 times the sum of <i>n</i> draws in an uniform distribution. Select <i>n</i> :</p>
-      <form>
-      <div class="input-group" style="width:30%">
-        <label>Number of draws (n)
-        <input class="form-control" type="text" name="n" value="100" id="n">
-        </label>
-        <label>Precision
-      <input class="form-control" type="text" name="precision" value="20" id="precision">
-      </label>
-      </div>
-      </form>
-      <button type="button" class="btn btn-primary" id="go">Simulate !</button>
-    </div>
-    <center>
-<div class="chart">
-<canvas id="myChart" width="10" height="10"></canvas>
-</center>
-   </div>
-
-
-    <!-- JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js" integrity="sha256-vyehT44mCOPZg7SbqfOZ0HNYXjPKgBCaqxBkW3lh6bg=" crossorigin="anonymous"></script>
-<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-    <script src="./ct.js"></script>
-      <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  </body>
+        <!-- JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.js" integrity="sha256-vyehT44mCOPZg7SbqfOZ0HNYXjPKgBCaqxBkW3lh6bg=" crossorigin="anonymous"></script>
+        <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+        <script src="./ct.js"></script>
+        <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    </body>
 </html>

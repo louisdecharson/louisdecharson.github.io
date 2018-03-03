@@ -1,3 +1,10 @@
+// Variables
+var N = 1000;        // Nb of trials
+var precision = 20; // nb of bars in the histogram
+var n = 100;        // length of the sum
+
+// Functions
+// n draws from a uniform distribution
 function draw(n) {
     var Sn = 0,
         sigma = 0.5/Math.sqrt(3),
@@ -22,9 +29,6 @@ function getX(n){return Array(2*n+1).fill().map((x,i)=>-5+5*i/n);}
 function getBar(n,precision,N) {
     return getHist(Array(2*N+1).fill().map(x=>draw(n)),precision);
 }
-var N = 1000; // Nb of trials
-var precision = 20; // nb of bars in the histogram
-var n = 100; // length of the sum
 var graphData = {
     labels:getX(precision),
     datasets:[
