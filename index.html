@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
     <head>
+        <meta charset="utf-8"/>
         <title>Louis de Charsonville</title>
         
         <meta property="og:title" content="Louis de Charsonville" />
@@ -53,12 +54,12 @@
          }
          a {
              color: var(--color-link);
-             border-width: 0 0 1px 0;
+             border-width: 0 0 2px 0;
              border-style: none none solid none;
-             text-decoration: none; 
+             text-decoration: none;
          }
          a:hover {
-             color: var(--color-text);
+             color: var(--color-bg);
              text-decoration: none;
              background-color: var(--color-link);
              border-color: var(--color-link);
@@ -83,6 +84,7 @@
          }
          ul.liens-profil > li {
              margin-left: 0;
+             margin-bottom: 0.4rem;
          }
 
          .conteneur-contenu {
@@ -162,6 +164,8 @@
                     <h2>Projects</h2>
                     <table>
                         <tbody>
+                            <tr><td><a href="./deplacement-covid">Générateur d'attestation</a></td><td>Automatic generator of travel authorization pass during COVID-19 in France.</td></tr>
+
                             <tr><td><a href="./grapherjs.html">Grapher.js</a></td><td>Tiny wrapper around D3.js to make line and bar charts (and also <a href="https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR">Edward Tufte's sparkline)</a>.</td></tr>
                             <tr><td><a href="./covid-19">Coronavirus Data Dashboard</a></td><td>Dashboard built with D3.js that compare spread of COVID-19 between countries.</td></tr>
                             <tr><td><a href="http://enselle.io">enSelle</a></td><td> Website and <a href="https://m.me/ensellebot">messenger bot</a> forecasting Velib (shared bikes) in Paris.</td></tr>
