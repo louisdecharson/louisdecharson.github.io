@@ -1,72 +1,171 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE>
 <html>
-<head>
-  <title>Louis de Charsonville</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-</head>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <head>
 
-<link rel="stylesheet" href="./css/louis.css">
+        <style>
+         :root {
+             --color-text: #35342f;
+             --color-titre: #9EA1A2;
+             --color-link: #6c757d;
+             --color-bg: #fff;
+             --color-h2: #073642;
+         }
+         @media (prefers-color-scheme: dark) {
+             :root {
+                 --color-text: #dddddd;
+                 --color-bg: #073642;
+                 --color-titre:  #cccccc;
+                 --color-link: #e9e9e9;
+                 --color-h2: #fff;
 
-<body>
-<div class="container-fluid">
-<h1><a href="/">Louis de Charsonville</a></h1>
-<div class="row">
-  <div class="col-md-3">
-    <img src="assets/photo_profil.jpg" width="230" height="230"></img>
-      <br>
-        <a href="./assets/resume_june2018.pdf">Curriculum Vitae</a>
-        <div></div>
-        <a href="http://github.com/louisdecharson">Github</a>
-        <div id=push></div>
-    </div>
-    <div class="col-md-9">
-      <h2>Work</h2>
-      <ul>
-          <li>2018 -<span class="year"></span> : Data scientist at <a href="https://www.ecb.europa.eu/home/html/index.en.html">ECB</a></li>
-          <li>2015 - 2018 : Economist at <a href="http://banque-france.fr">Banque de France</a></li>
-          <li>2016 - 2017 : Research assistant for Prof <a href="http://www.parisschoolofeconomics.com/zhuravskaya-ekaterina/">E.Zhuravskaya</a></li>
-          </ul>
-      </ul>
-      <div id=push></div>
-      <h2>Teaching</h2>
-      <ul>
-          <li>2018 - 2018 : <a href="./srqm.html">Sciences Po - Statistical Reasoning</a></li>
-          <li>2017 - 2017 : <a href="./qt2.html">Sciences Po - Quantitative Tools (Level 2)</a></li>
-          <li>2015 - 2017 : <a href="./qt.html">Sciences Po - Quantitative Tools (Level 1)</a></li>
-          <li>2015 - 2015 : <a href="./sciences-po/deflation.html">Sciences Po - PrepEna</a></li>
-      </ul>
-      <div id=push></div>
-      <h2>Research</h2>
-      <ul>
-        <li><a href="https://publications.banque-france.fr/sites/default/files/medias/documents/dt-637.pdf">MAPI: Model for Analysis and Projection of Inflation in France</a> (with Caroline Jardet and Thomas Ferriere), Banque de France, Working Paper Series no. 637, August 2017.</li>
-        <li>Betty: a Matlab toolbox for advanced Bayesian econometric analysis (Joint work with <a href="https://www.edhec.edu/en/corps-professoral-et-chercheurs/pelgrin-florian-phd">F. Pelgrin</a>)<i> (to be publicly released soon)</i></li>
-      </ul>
-      <div id=push></div>
-      <h2>Open source projects</h2>
-      <ul class="spacedlist">
-          <li><a href="./grapherjs.html">Grapher.js</a>: a tiny wrapper around D3.js to make line and bar charts (and also <a href="https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR">Edward Tufte's sparkline).</li>
-          <li><a href="./covid-19">Coronavirus Data Dashboard</a>: a dashboard built with D3.js that compare spread of COVID-19 between countries.</li>
-          <li><a href="http://enselle.io">enSelle</a>: a website and a <a href="https://m.me/ensellebot">messenger bot</a> forecasting Velib (shared bikes) in Paris.</li>
-          <li><a href="./villesmondes/">Villes Mondes</a>: a world map to discover and replay episodes of the France Culture's radio show Villes Mondes.</li>
-          <li><a href="http://sharev.herokuapp.com">Share Event</a>: a web-app to share events <i>via</i>an unique URL.</li>
-          <li><a href="http://sdmx.herokuapp.com">SDMX + EVIEWS</a>: a web-app which allows to donwload timeseries from various institutions including Eurostat, ECB and Insee to EViews</li>
-          <li><a href="./ats.html">Analyse Ton Son</a>: a MacOs software transforming input sound into graphical images to output on 3D structures.</li>
-          <li><a href="./lagrandemusique/">la Grande Musique</a>: a curated selection of classical pieces that you can listen to freely.</li>
-          <li><a href="./flatuicolors">Flat UI Colors</a>: a curated selection of colors for designing beautiful UI (it is copied from the original flatuicolors website that required Flash.)</li>
-          <li><a href="http://calinsee.herokuapp.com">Calendar of Insee economic indicators</a>: if you are interested, subscribe !</li>
-      </ul>
-      <div id=push></div>
-      <h2>Others</h2>
-      <li><a href="./assets/formation_eviews.pdf">Programmer avec EViews</a> (one-day course on EViews at Banque de France)</li>
-    </div>
-</div>
+             }
+         }
+         body {
+             background-color: var(--color-bg);
+             color: var(--color-text);
+             margin-top: 50px;
+             font-family: "GillSans","Helvetica", "Arial", sans-serif
+         }
+         .conteneur {
+             max-width: 1200px;
+             margin: auto;
+             display: flex;
+             flex-wrap: wrap;
+         }
+         .sidebar {
+             max-width: 25%;
+         }
+         main {
+             max-width: 75%;
+         }
+         a {
+             color: var(--color-link);
+             border-width: 0 0 1px 0;
+             border-style: none none solid none;
+             text-decoration: none; 
+         }
+         a:hover {
+             color: var(--color-text);
+             text-decoration: none;
+             background-color: var(--color-link);
+             border-color: var(--color-link);
+         }
+         h2 {
+             color: var(--color-h2);
+             text-transform: uppercase;
+         }
+         ul {
+             list-style-type: none;
+             padding-left: 0;
+         }
 
-<script async defer src="https://cdn.simpleanalytics.io/hello.js"></script> 
-<noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
-</body>
-</html>  
-  
-  
+         .titre {
+             color: var(--color-titre);
+             font-size: 2rem;
+             margin-bottom: 1rem;
+             text-transform: uppercase;
+         }
+         ul.liens-profil {
+             text-transform: uppercase;
+         }
+         ul.liens-profil > li {
+             margin-left: 0;
+         }
+
+         .conteneur-contenu {
+             margin-top: 0rem;
+         }
+         h2{
+             padding-top: 0.1em;
+             border-top: 0.1em solid;
+         }
+         td + td {
+             padding-left: 1rem;
+         }
+
+         @media (max-width: 768px) {
+             body {
+                 margin-top: 1rem !important;
+             }
+             .sidebar {
+                 max-width: 100%;
+             }
+             main {
+                 max-width: 100%;
+             }
+
+         }
+        </style>
+        
+    </head>
+
+    <body>
+
+        <div class="conteneur">
+            <div class="sidebar">
+                <div class="titre"> Louis de Charsonville
+                </div>
+                <img src="assets/photo_profil.jpg" width="230" height="230"></img>
+                <ul class="liens-profil">
+                    <li><a href="./assets/resume_june2018.pdf">Curriculum Vitae</a></li>
+                    <li><a href="http://github.com/louisdecharson">Github</a></li>
+                </ul>
+            </div>
+
+
+            <main>
+
+                <div class="conteneur-contenu">
+                    <h2>Professional activities</h2>
+                    <table>
+                        <tbody>
+                            <tr><td>since 2018</td><td>Data scientist at <a href="https://www.ecb.europa.eu/home/html/index.en.html">European Central Bank</a> (Frankfurt-am-Main, Germany)</td></tr>
+                            <tr><td>2015 - 2018</td><td>Economist at <a href="http://banque-france.fr">Banque de France</a> (Paris, France)</td></tr>
+                            <tr><td>2016 - 2017</td><td>Research assistant for Prof <a href="http://www.parisschoolofeconomics.com/zhuravskaya-ekaterina/">E.Zhuravskaya</a></td></tr>
+                        </tbody>
+                    </table>
+                    
+                    <h2>Teaching</h2>
+                    <table>
+                        <tbody>
+                            <tr><td>Spring 2018</td><td><a href="./srqm.html">Sciences Po - Statistical Reasoning</a></td></tr>
+                            <tr><td>Fall 2017</td><td><a href="./qt2.html">Sciences Po - Quantitative Tools (Level 2)</a></td></tr>
+                            <tr><td>2015 - 2017</td><td><a href="./qt.html">Sciences Po - Quantitative Tools (Level 1)</a></td></tr>
+                            <tr><td>2015 - 2015</td><td><a href="./sciences-po/deflation.html">Sciences Po - PrepEna</a></td></tr>
+                            <tr><td>2016</td><td> <a href="./assets/formation_eviews.pdf">Programmer avec EViews</a> (one-day course on EViews at Banque de France)</td></tr>
+
+                        </tbody>
+                    </table>
+
+                    <h2>Research</h2>
+                    <table>
+                        <tbody>
+                            <tr><td><a href="https://publications.banque-france.fr/sites/default/files/medias/documents/dt-637.pdf">MAPI: Model for Analysis and Projection of Inflation in France</a> (with Caroline Jardet and Thomas Ferriere), Banque de France, Working Paper Series no. 637, August 2017.</td></tr>
+                            <tr><td>Betty: a Matlab toolbox for advanced Bayesian econometric analysis (Joint work with <a href="https://www.edhec.edu/en/corps-professoral-et-chercheurs/pelgrin-florian-phd">F. Pelgrin</a>)<i> (to be publicly released soon)</i></td></tr>
+                        </tbody>
+                    </table>
+
+
+                    <h2>Projects</h2>
+                    <table>
+                        <tbody>
+                            <tr><td><a href="./grapherjs.html">Grapher.js</a></td><td>Tiny wrapper around D3.js to make line and bar charts (and also <a href="https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR">Edward Tufte's sparkline)</a>.</td></tr>
+                            <tr><td><a href="./covid-19">Coronavirus Data Dashboard</a></td><td>Dashboard built with D3.js that compare spread of COVID-19 between countries.</td></tr>
+                            <tr><td><a href="http://enselle.io">enSelle</a></td><td> Website and <a href="https://m.me/ensellebot">messenger bot</a> forecasting Velib (shared bikes) in Paris.</td></tr>
+                            <tr><td><a href="./villesmondes/">Villes Mondes</a></td><td>World map to discover and replay episodes of the France Culture's radio show Villes Mondes.</td></tr>
+                            <tr><td><a href="http://sharev.herokuapp.com">Share Event</a></td><td>Web-app to share events <i>via</i>an unique URL.</td></tr>
+                            <tr><td><a href="http://sdmx.herokuapp.com">SDMX + EVIEWS</a></td><td>Web-app which allows to donwload timeseries from various institutions including Eurostat, ECB and Insee to EViews</td></tr>
+                            <tr><td><a href="./ats.html">Analyse Ton Son</a></td><td>MacOs software transforming input sound into graphical images to output on 3D structures.</td></tr>
+                            <tr><td><a href="./lagrandemusique/">la Grande Musique</a></td><td>Curated selection of classical pieces that you can listen to freely.</td></tr>
+                            <tr><td><a href="./flatuicolors">Flat UI Colors</a></td><td>Curated selection of colors for designing beautiful UI (it is copied from the original flatuicolors website that required Flash.)</td></tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </main>
+        </div>
+        <script async defer src="https://cdn.simpleanalytics.io/hello.js"></script> 
+        <noscript><img src="https://api.simpleanalytics.io/hello.gif" alt=""></noscript>
+    </body>
+</html>
