@@ -28,14 +28,17 @@
         --color-link: #6c757d;
         --color-bg: #fff;
         --color-h2: #073642;
+        --color-bg-vignette: #eeeeee;
       }
       @media (prefers-color-scheme: dark) {
         :root {
           --color-text: #dddddd;
           --color-bg: #073642;
+          --color-bg: #073642;
           --color-titre: #cccccc;
           --color-link: #e9e9e9;
           --color-h2: #fff;
+          --color-bg-vignette: #0a4b54;
         }
       }
       body {
@@ -112,6 +115,75 @@
         main {
           max-width: 100%;
         }
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      .grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        align-items: flex-start;
+      }
+      @media (min-width: 640px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      @media (min-width: 1280px) {
+        .grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+      .vignette {
+        width: 250px;
+        height: 200px;
+        background-color: var(--color-bg-vignette);
+        padding: 1rem;
+        text-decoration: none;
+        color: var(--color-text);
+        cursor: auto;
+        border: none;
+        border-radius: 0.5rem;
+      }
+      .vignette:hover {
+        cursor: auto;
+      }
+      .vignette-img {
+        object-fit: cover;
+        width: 100%;
+        height: 120px;
+        object-position: top;
+        border-radius: 0.5rem;
+      }
+      .vignette-titre {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .vignette-description {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .profile-pic {
+        border-radius: 0.5rem;
+        width: 230px;
+        height: auto;
+        transition: box-shadow 0.3s ease;
+      }
+      .profile-pic:hover {
+        /* animation: buzz 0.3s infinite alternate; */
+        box-shadow: 0 4px 20px rgba(230, 240, 0, 0.5);
+      }
+      @keyframes buzz {
+        0% {
+          transform: translate(0);
+        }
+        50% {
+          transform: translate(0.5px, 0.5px);
+        }
+        100% {
+          transform: translate(-0.5px, -0.5px);
+        }
       }
     </style>
   </head>
@@ -120,7 +192,10 @@
     <div class="conteneur">
       <div class="sidebar">
         <div class="titre">Louis de Charsonville</div>
-        <img src="assets/photo_profil.jpg" width="230" height="230" />
+        <img
+          src="assets/LouisdeCharsonville_photo_profil.jpg"
+          class="profile-pic"
+        />
         <ul class="liens-profil">
           <li><a href="./assets/CV_june2024.pdf">Curriculum Vitae</a></li>
           <li><a href="http://github.com/louisdecharson">Github</a></li>
@@ -135,8 +210,11 @@
               <tr>
                 <td>since 2020</td>
                 <td>
-                  Data scientist at
-                  <a href="https://www.mckinsey.com">McKinsey & Company</a>
+                  Expert Engagement Manager / Principal Data Scientist
+                  <a
+                    href="https://www.mckinsey.com/capabilities/quantumblack/how-we-help-clients"
+                    >Quantum Black, AI by McKinsey</a
+                  >
                   (Paris, France)
                 </td>
               </tr>
@@ -170,6 +248,110 @@
               </tr>
             </tbody>
           </table>
+          <h2>Personal Projects</h2>
+          <div class="grid">
+            <a
+              class="vignette"
+              href="https://github.com/louisdecharson/converse"
+            >
+              <img class="vignette-img" src="./assets/vignettes/converse.png" />
+              <h4 class="vignette-titre">Converse</h4>
+              <p class="vignette-description">
+                Desktop app to chat with various LLM models and create agents.
+              </p>
+            </a>
+            <a class="vignette" href="http://santa.kommunalka.fr">
+              <img
+                class="vignette-img"
+                src="./assets/vignettes/secret_santa_generator.png"
+              />
+              <h4 class="vignette-titre">Secret Santa generator</h4>
+              <p class="vignette-description">
+                Small website to generate Secret Santa for friends & family
+              </p>
+            </a>
+            <a class="vignette" href="./deplacement-covid">
+              <img
+                class="vignette-img"
+                src="./assets/vignettes/covid_19_attestation.png"
+              />
+              <h4 class="vignette-titre">Covid 19 Travel Authorization</h4>
+              <p class="vignette-description">
+                Automatic generator of travel authorization pass during COVID-19
+                in France.
+              </p>
+            </a>
+            <a class="vignette" href="./grapherjs.html">
+              <img class="vignette-img" src="./assets/vignettes/grapher.png" />
+              <h4 class="vignette-titre">Grapher.js</h4>
+              <p class="vignette-description">
+                Tiny wrapper around D3.js to make line and bar charts (and also
+                sparklines)
+              </p>
+            </a>
+            <a class="vignette" href="./covid-19.html">
+              <img
+                class="vignette-img"
+                src="./assets/vignettes/covid_19_dashboard.png"
+              />
+              <h4 class="vignette-titre">Covid Data Dashboard</h4>
+              <p class="vignette-description">
+                Dashboard comparing spread of COVID-19 between countries (Python
+                + d3.js)
+              </p>
+            </a>
+            <a class="vignette">
+              <img class="vignette-img" src="./assets/vignettes/enselle.png" />
+              <h4 class="vignette-titre">Enselle (retired)</h4>
+              <p class="vignette-description">
+                Website and Facebook messenger bot forecasting Velib (shared
+                bikes) in Paris.
+              </p>
+            </a>
+            <a class="vignette" href="./villesmondes">
+              <img
+                class="vignette-img"
+                src="./assets/vignettes/villes_mondes.png"
+              />
+              <h4 class="vignette-titre">Villes mondes</h4>
+              <p class="vignette-description">
+                World map to discover and replay episodes of the France
+                Culture's radio show Villes Mondes.
+              </p>
+            </a>
+            <a class="vignette" href="http://sdmx.herokuapp.com">
+              <img
+                class="vignette-img"
+                src="./assets/vignettes/sdmx_eviews-2.png"
+              />
+              <h4 class="vignette-titre">SDMX + EViews</h4>
+              <p class="vignette-description">
+                Web-app to donwload timeseries from SDMX timeseries data from
+                ECB, Eurostat, Insee, etc.
+              </p>
+            </a>
+            <a class="vignette" href="./lagrandemusique/">
+              <img
+                class="vignette-img"
+                src="./assets/vignettes/lagrandemusique.png"
+              />
+              <h4 class="vignette-titre">La grande musique</h4>
+              <p class="vignette-description">
+                Curated selection of classical pieces that you can listen to
+                freely.
+              </p>
+            </a>
+            <a class="vignette" href="./flatuicolors">
+              <img
+                class="vignette-img"
+                src="./assets/vignettes/flatuicolors.png"
+              />
+              <h4 class="vignette-titre">Flat UI Colors</h4>
+              <p class="vignette-description">
+                Curated selection of colors for designing beautiful UI.
+              </p>
+            </a>
+          </div>
 
           <h2>Teaching</h2>
           <table>
@@ -238,98 +420,6 @@
                     href="https://www.edhec.edu/en/corps-professoral-et-chercheurs/pelgrin-florian-phd"
                     >F. Pelgrin</a
                   >)<i> (to be publicly released soon)</i>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h2>Projects</h2>
-          <table>
-            <tbody>
-              <tr>
-                <td>
-                  <a href="http://santa.kommunalka.fr">Secret Santa creator</a>
-                </td>
-                <td>
-                  Secret Santa Generator: pick a name, set participants and
-                  budget, then share the link so everyone can see who they're
-                  buying a present for!
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="./deplacement-covid">Générateur d'attestation</a>
-                </td>
-                <td>
-                  Automatic generator of travel authorization pass during
-                  COVID-19 in France.
-                </td>
-              </tr>
-
-              <tr>
-                <td><a href="./grapherjs.html">Grapher.js</a></td>
-                <td>
-                  Tiny wrapper around D3.js to make line and bar charts (and
-                  also
-                  <a
-                    href="https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR"
-                    >Edward Tufte's sparkline)</a
-                  >.
-                </td>
-              </tr>
-              <tr>
-                <td><a href="./covid-19">Coronavirus Data Dashboard</a></td>
-                <td>
-                  Dashboard built with D3.js that compare spread of COVID-19
-                  between countries.
-                </td>
-              </tr>
-              <tr>
-                <td><a href="http://enselle.io">enSelle</a></td>
-                <td>
-                  Website and
-                  <a href="https://m.me/ensellebot">messenger bot</a>
-                  forecasting Velib (shared bikes) in Paris.
-                </td>
-              </tr>
-              <tr>
-                <td><a href="./villesmondes/">Villes Mondes</a></td>
-                <td>
-                  World map to discover and replay episodes of the France
-                  Culture's radio show Villes Mondes.
-                </td>
-              </tr>
-              <tr>
-                <td><a href="http://sharev.herokuapp.com">Share Event</a></td>
-                <td>Web-app to share events <i>via</i>an unique URL.</td>
-              </tr>
-              <tr>
-                <td><a href="http://sdmx.herokuapp.com">SDMX + EVIEWS</a></td>
-                <td>
-                  Web-app which allows to donwload timeseries from various
-                  institutions including Eurostat, ECB and Insee to EViews
-                </td>
-              </tr>
-              <tr>
-                <td><a href="./ats.html">Analyse Ton Son</a></td>
-                <td>
-                  MacOs software transforming input sound into graphical images
-                  to output on 3D structures.
-                </td>
-              </tr>
-              <tr>
-                <td><a href="./lagrandemusique/">la Grande Musique</a></td>
-                <td>
-                  Curated selection of classical pieces that you can listen to
-                  freely.
-                </td>
-              </tr>
-              <tr>
-                <td><a href="./flatuicolors">Flat UI Colors</a></td>
-                <td>
-                  Curated selection of colors for designing beautiful UI (it is
-                  copied from the original flatuicolors website that required
-                  Flash.)
                 </td>
               </tr>
             </tbody>
